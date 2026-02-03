@@ -8,14 +8,6 @@ Purpose: Showcase projects/works, includes Subscribe form
         <!-- Meta tags for character encoding and responsive design -->
         <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
-        <!-- External font styles from Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet"> <!-- Loads Lora and Ubuntu fonts -->
-        <!-- Icon library for social media icons -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Loads Boxicons for icons -->
-        <!-- Bootstrap JavaScript bundle for interactive components -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Includes Bootstrap JS for navbar toggle, etc. -->
-        <!-- Bootstrap CSS framework for styling -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Loads Bootstrap CSS for layout and components -->
         <!-- Custom CSS file for additional styling -->
         <link href="design.css" rel="stylesheet"> <!-- Links to our custom stylesheet -->
 
@@ -26,137 +18,90 @@ Purpose: Showcase projects/works, includes Subscribe form
         <div class="main-wrapper">
             <!-- Header section containing the navigation -->
             <div class="header">
-                <!-- Navigation bar using Bootstrap classes -->
-                <nav class="navbar navbar-expand-lg navbar-light"> <!-- Bootstrap navbar that collapses on small screens -->
-                    <div class="container"> <!-- Bootstrap container for responsive layout -->
-                      <a class="navbar-brand" href="index.html"><span class="first-letter">H</span>ello <span class="first-letter">W</span>orld</a> <!-- Brand link with styled first letters -->
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Button to toggle menu on mobile -->
-                        <span class="navbar-toggler-icon"></span> <!-- Hamburger icon -->
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Collapsible menu content -->
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0"> <!-- Nav list, aligned to the right -->
-                          <li class="nav-item"> <!-- Individual nav item -->
-                            <a class="nav-link" href="index.html">Home</a> <!-- Link to home page -->
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a> <!-- Link to about page -->
-                          </li>
-                          <li class="nav-item is-active"> <!-- Active nav item -->
-                            <a class="nav-link" href="portfolio.html">Portfolio</a> <!-- Link to portfolio page, marked as active -->
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                <!-- End of the Navigation Menu -->
+                <!-- Simple navigation bar -->
+                <nav> <!-- Navigation menu -->
+                    <ul> <!-- Unordered list for nav items -->
+                        <li><a href="index.html">Home</a></li> <!-- Link to home page -->
+                        <li><a href="about.html">About</a></li> <!-- Link to about page -->
+                        <li><a href="portfolio.html">Portfolio</a></li> <!-- Link to portfolio page -->
+                    </ul>
+                </nav>
             </div>
             <!-- End of the Header -->
             <!-- Main content section with projects -->
             <div class="main-title"> <!-- Title section for the portfolio -->
               <h1>Projects and Research Conducted</h1> <!-- Main heading for the page -->
             </div>
-            <div class="container mt-2"> <!-- Bootstrap container with top margin -->
-              <div class="row"> <!-- Bootstrap row for grid layout -->
-                <!-- First project card -->
-                <div class="col-md-3 col-sm-6"> <!-- Column: 3/12 on medium screens, 6/12 on small -->
-                  <div class="card card-block"> <!-- Bootstrap card for project display -->
-                  <h4 class="card-title text-center">Personal Project</h4> <!-- Card title centered -->
-                <img class="img-portfolio" src="https://vyapaar.net/wp-content/uploads/2022/12/project-management-1024x439.png"> <!-- Project image -->
-                <h5 class="card-title  mt-3 mb-3"></h5> <!-- Empty subtitle -->
-                <p class="card-text"> <!-- Card description -->
-                        To create an inclusive environment for the non-hearing
-                        community in Pakistan, through creating a website to teach Sign Language and
-                        limiting the communication gaps.
-                    </p>
-                    <a class="button btn btn-secondary" href="#">See Report</a> <!-- Button to view report -->
+            <div class="content"> <!-- Container for projects -->
+              <!-- First project -->
+              <div class="project"> <!-- Project wrapper -->
+                <h4>Personal Project</h4> <!-- Title -->
+                <img class="img-portfolio" src="https://vyapaar.net/wp-content/uploads/2022/12/project-management-1024x439.png" alt="Personal Project Image"> <!-- Image -->
+                <p> <!-- Description -->
+                  To create an inclusive environment for the non-hearing
+                  community in Pakistan, through creating a website to teach Sign Language and
+                  limiting the communication gaps.
+                </p>
+                <a class="button" href="#">See Report</a> <!-- Link -->
               </div>
-                </div>
-                <!-- Second project card -->
-                <div class="col-md-3 col-sm-6"> <!-- Another column -->
-                  <div class="card card-block"> <!-- Card wrapper -->
-                  <h4 class="card-title text-center">Design Portfolio</h4> <!-- Title -->
-                <img class="img-portfolio" src="https://www.projectmanager.com/wp-content/uploads/2021/10/211014_Blog_Feature_Project_Environment-scaled.jpg"> <!-- Image -->
-                    <h5 class="card-title  mt-3 mb-3"></h5> <!-- Empty subtitle -->
-                    <p class="card-text"> <!-- Description -->
-                        To create family inclusive game, to promote family
-                        engagement and improve family connections.
-                    </p>
-                    <a class="button btn btn-secondary" href="#">See Report</a> <!-- Button link -->
+              <!-- Second project -->
+              <div class="project"> <!-- Project wrapper -->
+                <h4>Design Portfolio</h4> <!-- Title -->
+                <img class="img-portfolio" src="https://www.projectmanager.com/wp-content/uploads/2021/10/211014_Blog_Feature_Project_Environment-scaled.jpg" alt="Design Portfolio Image"> <!-- Image -->
+                <p> <!-- Description -->
+                  To create family inclusive game, to promote family
+                  engagement and improve family connections.
+                </p>
+                <a class="button" href="#">See Report</a> <!-- Link -->
               </div>
-                </div>
-                <!-- Third project card -->
-                <div class="col-md-3 col-sm-6"> <!-- Column for third project -->
-                  <div class="card card-block"> <!-- Card container -->
-                  <h4 class="card-title text-center">Extended Essay in Business Management</h4> <!-- Title -->
-                <img class="img-portfolio" src="https://cdn-cashy-static-assets.lucidchart.com/marketing/blog/2017Q3/phases-project-management-lifecycle/phases-project-management-lifecycle-header.png"> <!-- Image -->
-                    <h5 class="card-title  mt-3 mb-3"></h5> <!-- Empty subtitle -->
-                    <p class="card-text"> <!-- Description -->
-                        How Samsung's smartphone's generic and intensive
-                        growth strategies has given it a competitive edge over Apple's iPhone to sustain
-                        its global market share in the future?
-                    </p>
-                    <a class="button btn btn-secondary" href="#">See Report</a> <!-- Button -->
+              <!-- Third project -->
+              <div class="project"> <!-- Project wrapper -->
+                <h4>Extended Essay in Business Management</h4> <!-- Title -->
+                <img class="img-portfolio" src="https://cdn-cashy-static-assets.lucidchart.com/marketing/blog/2017Q3/phases-project-management-lifecycle/phases-project-management-lifecycle-header.png" alt="Business Management Image"> <!-- Image -->
+                <p> <!-- Description -->
+                  How Samsung's smartphone's generic and intensive
+                  growth strategies has given it a competitive edge over Apple's iPhone to sustain
+                  its global market share in the future?
+                </p>
+                <a class="button" href="#">See Report</a> <!-- Link -->
               </div>
-                </div>
-                <!-- Fourth project card -->
-                <div class="col-md-3 col-sm-6"> <!-- Column for fourth project -->
-                  <div class="card card-block"> <!-- Card -->
-                  <h4 class="card-title text-center">Mathematics</h4> <!-- Title -->
-                <img class="img-portfolio" src="https://m.media-amazon.com/images/I/61EtSQ7KqqL._AC_UF894,1000_QL80_.jpg"> <!-- Image -->
-                    <h5 class="card-title  mt-3 mb-3"></h5> <!-- Empty subtitle -->
-                    <p class="card-text"> <!-- Description -->
-                        To determine the optimum model for predicting new lung cancer
-                        cases in the USA
-                    </p>
-                    <a class="button btn btn-secondary" href="#">See Report</a> <!-- Button -->
+              <!-- Fourth project -->
+              <div class="project"> <!-- Project wrapper -->
+                <h4>Mathematics</h4> <!-- Title -->
+                <img class="img-portfolio" src="https://m.media-amazon.com/images/I/61EtSQ7KqqL._AC_UF894,1000_QL80_.jpg" alt="Mathematics Image"> <!-- Image -->
+                <p> <!-- Description -->
+                  To determine the optimum model for predicting new lung cancer
+                  cases in the USA
+                </p>
+                <a class="button" href="#">See Report</a> <!-- Link -->
               </div>
-                </div>
+              <!-- Fifth project -->
+              <div class="project"> <!-- Project wrapper -->
+                <h4>Physics</h4> <!-- Title -->
+                <img class="img-portfolio" src="https://media.istockphoto.com/id/936903524/vector/blackboard-inscribed-with-scientific-formulas-and-calculations-in-physics-and-mathematics-can.jpg?s=612x612&w=0&k=20&c=sRLsJbHUVOYvZ_M16hti4fF9NM0RysfjAPUQrCJ8o4U=" alt="Physics Image"> <!-- Image -->
+                <p> <!-- Description -->
+                  Investigating the change in time period with the variation of distance
+                  between two suspension points to determine the moment of inertia of a
+                  cylindrical rod using a bifilar pendulum
+                </p>
+                <a class="button" href="#">See Report</a> <!-- Link -->
               </div>
-            </div>
-            <div class="container mt-2"> <!-- Second container for more projects -->
-              <div class="row"> <!-- Another row -->
-                <!-- Fifth project card -->
-                <div class="col-md-3 col-sm-6"> <!-- Column -->
-                  <div class="card card-block"> <!-- Card -->
-                  <h4 class="card-title text-center">Physics</h4> <!-- Title for fifth project -->
-                <img class="img-portfolio" src="https://media.istockphoto.com/id/936903524/vector/blackboard-inscribed-with-scientific-formulas-and-calculations-in-physics-and-mathematics-can.jpg?s=612x612&w=0&k=20&c=sRLsJbHUVOYvZ_M16hti4fF9NM0RysfjAPUQrCJ8o4U="> <!-- Image -->
-                    <h5 class="card-title mt-3 mb-3"></h5> <!-- Empty subtitle -->
-                    <p class="card-text"> <!-- Description -->
-                        Investigating the change in time period with the variation of distance
-                        between two suspension points to determine the moment of inertia of a
-                        cylindrical rod using a bifilar pendulum
-                    </p>
-                    <a class="button btn btn-secondary" href="#">See Report</a> <!-- Button -->
-              </div>
-                </div>
-                <!-- Sixth project card -->
-                <div class="col-md-3 col-sm-6"> <!-- Column for sixth project -->
-                  <div class="card card-block"> <!-- Card -->
-                  <h4 class="card-title text-center">Business Management</h4> <!-- Title -->
-                <img class="img-portfolio" src="https://www.prioritymanagement.com.au/wp-content/uploads/2023/04/what-is-it-project-manager-1.jpg"> <!-- Image -->
-                    <h5 class="card-title  mt-3 mb-3"></h5> <!-- Empty subtitle -->
-                    <p class="card-text"> <!-- Description -->
-                        To what extent Askari Bank Limited (ABL), Airport Branch, Lahore can
-                        improve its extended marketing mix strategies to enhance their
-                        customer satisfaction?
-                    </p>
-                    <a class="button btn btn-secondary" href="#">See Report</a> <!-- Button -->
-              </div>
-                </div>
+              <!-- Sixth project -->
+              <div class="project"> <!-- Project wrapper -->
+                <h4>Business Management</h4> <!-- Title -->
+                <img class="img-portfolio" src="https://www.prioritymanagement.com.au/wp-content/uploads/2023/04/what-is-it-project-manager-1.jpg" alt="Business Management Image"> <!-- Image -->
+                <p> <!-- Description -->
+                  To what extent Askari Bank Limited (ABL), Airport Branch, Lahore can
+                  improve its extended marketing mix strategies to enhance their
+                  customer satisfaction?
+                </p>
+                <a class="button" href="#">See Report</a> <!-- Link -->
               </div>
             </div>
             <!-- End of the Main Content -->
-            <!-- Footer section with social media links -->
+            <!-- Footer section -->
             <div class="footer"> <!-- Footer wrapper -->
-                <div class="container"> <!-- Container for footer content -->
-                    <div class="socials text-center"> <!-- Centered social icons -->
-                        <ul class="footer-list"> <!-- Unordered list for social links -->
-                            <li><a href="#"><i class='bx bxl-github'></i></a></li> <!-- GitHub icon link -->
-                            <li><a href="#"><i class='bx bxl-gmail'></i></a></li> <!-- Gmail icon link -->
-                            <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li> <!-- LinkedIn icon link -->
-                        </ul>
-                    </div>
-                </div>
+                <p>&copy; 2023 Your Name. All rights reserved.</p> <!-- Copyright text -->
             </div>
             <!-- End of the Footer -->
         </div>

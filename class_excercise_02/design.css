@@ -6,7 +6,7 @@ body, html { /* Applies to body and html elements */
     padding: 0; /* Removes default padding */
     height: 100%; /* Full viewport height */
     box-sizing: border-box; /* Includes padding and border in width/height calculations */
-    font-family: "Lora", sans-serif; /* Sets the font family */
+    font-family: sans-serif; /* Simple default font */
     background: #fff; /* Fallback background color */
     color: #000; /* Default text color */
     overflow-x: hidden; /* Hides horizontal overflow */
@@ -62,124 +62,85 @@ a:hover { /* Link hover effect */
 
 /* Navigation Menu - Styling for the navbar */
 
-.navbar { /* Bootstrap navbar override */
-    position: relative;
+nav { /* Simple nav styling */
     background: rgba(0,0,0,0.8); /* Semi-transparent black background */
+    padding: 1rem; /* Padding inside nav */
 }
 
-.navbar-brand { /* Brand link in navbar */
-    font-family: "Ubuntu", sans-serif; /* Different font for brand */
-    font-size: 60px; /* Large font size */
+nav ul { /* Nav list */
+    list-style: none; /* Removes bullets */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Centers items */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
-.first-letter { /* Special styling for first letters in brand */
-    font-weight: 700; /* Bold */
-    color: #3F49A4 !important; /* Blue color */
+nav ul li { /* Nav list items */
+    margin: 0 1rem; /* Horizontal margin */
 }
 
-.navbar-brand:hover { /* Brand hover effect */
-    color: #fff !important; /* White on hover */
+nav ul li a { /* Nav links */
+    color: #fff; /* White text */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    padding: 0.5rem 1rem; /* Padding */
+    transition: background 0.3s; /* Smooth transition */
 }
 
-.navbar-toggler { /* Hamburger button */
-    background-color: #fff; /* White background */
-}
-
-.navbar-toggler:hover { /* Toggler hover */
-    background-color: #bbb; /* Light gray */
-}
-
-.navbar-collapse { /* Collapsed menu container */
-    text-align: center; /* Centers menu items */
-}
-
-.navbar ul li { /* Nav list items */
-    position: relative;
-    margin-top: 1.5rem; /* Top margin */
-    margin-left: 2.5rem; /* Left margin */
-    margin-right: 0rem; /* Right margin */
-    margin-bottom: 2rem; /* Bottom margin */
-}
-
-.navbar ul li a { /* Nav link styling */
-    position: relative;
-    display: block; /* Block display for full width */
-    font-size: 20px; /* Font size */
-    font-weight: 600; /* Semi-bold */
-    line-height: 14px; /* Line height */
-    letter-spacing: 1.6px; /* Letter spacing */
-}
-
-.is-active { /* Active nav item indicator */
-    border-bottom: 2px solid #3F49A4; /* Blue underline */
-}
-
-.is-active:hover { /* Active item hover */
-    border-bottom: 2px solid #978CD1; /* Lighter blue */
+nav ul li a:hover { /* Link hover */
+    background: #555; /* Dark gray background on hover */
 }
 
 /* Content - Main content area styling */
 
 .content { /* Main content wrapper */
-    position: relative;
-    padding-top: 3rem; /* Top padding */
-    padding-bottom: 3rem; /* Bottom padding */
-    font-weight: 500; /* Medium font weight */
+    padding: 2rem; /* Padding around content */
+    text-align: center; /* Centers text */
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap to next line */
+    justify-content: center; /* Centers items */
 }
 
-.content .content-title { /* Title inside content */
-    position: relative;
-    margin: 0; /* No margin */
-    padding-top: 2rem; /* Reduced top padding to bring text closer */
-    padding-bottom: 2rem; /* Bottom padding */
-    font-family: "Ubuntu", serif; /* Serif font */
+.content .project { /* Projects inside content */
+    flex: 1 1 30%; /* Flexible width, min 30% */
+    max-width: 300px; /* Max width */
+    margin: 1rem; /* Margin around each */
+}
+
+.content h1 { /* Heading in content */
     font-size: 50px; /* Large size */
-    font-weight: 600; /* Bold */
-    letter-spacing: 1px; /* Slight spacing */
-    color: #000; /* Black color */
+    margin-bottom: 1rem; /* Bottom margin */
 }
 
-.content .content-description { /* Description text */
-    position: relative;
-    font-size: 25px; /* Medium size */
-    color: #000; /* Black */
+.content p { /* Paragraph in content */
+    font-size: 20px; /* Medium size */
+    margin-bottom: 2rem; /* Bottom margin */
 }
 
-.content .content-button { /* Button in content */
-    text-transform: uppercase; /* Uppercase text */
+.content a { /* Link in content */
+    display: inline-block; /* Inline block */
+    padding: 0.5rem 1rem; /* Padding */
+    background: #888; /* Gray background */
+    color: #fff; /* White text */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.content a:hover { /* Link hover */
+    background: #666; /* Darker gray */
 }
 
 /* Footer - Bottom section styling */
 
 .footer { /* Footer container */
-    position: relative; /* Positions relative to normal flow */
     background: rgba(0,0,0,0.8); /* Semi-transparent background */
-    bottom: 0; /* Not needed for relative */
-    width: 100%; /* Full width */
-    padding-top: 20px; /* Top padding */
+    color: #fff; /* White text */
+    text-align: center; /* Centers text */
+    padding: 1rem; /* Padding */
 }
 
-.footer .socials .footer-list { /* Social links list */
-    position: relative;
-    margin: 0 0 20px 0; /* Margins */
-    display: inline-block; /* Inline block */
-}
-
-.footer .socials .footer-list li { /* List items */
-    float: left; /* Floats left */
-    margin-right: 10px; /* Right margin */
-}
-
-.footer .socials .footer-list li a { /* Social link icons */
-    position: relative;
-    font-size: 40px; /* Large icons */
-    font-weight: 500; /* Medium weight */
-    letter-spacing: 0.5rem; /* Spacing */
-    color: #3F49A4 !important; /* Blue color */
-}
-
-.footer .socials .footer-list li a:hover { /* Icon hover */
-    color: #978CD1 !important; /* Lighter blue */
+.footer p { /* Paragraph in footer */
+    margin: 0; /* No margin */
 }
 
 /* About - Styling for about page */
@@ -207,25 +168,37 @@ a:hover { /* Link hover effect */
 .img-portfolio { /* Portfolio images */
     height: 150px; /* Fixed height */
     width: 100%; /* Full width */
+    object-fit: cover; /* Ensures image covers the area without distortion */
 }
 
-.card { /* Project cards */
+.project { /* Project wrapper */
     background-color: rgba(104,104,104, 0.3); /* Semi-transparent background */
-    transition: 0.3s; /* Smooth transition */
+    margin-bottom: 1rem; /* Bottom margin */
+    padding: 1rem; /* Padding inside */
     border-radius: 1rem; /* Rounded corners */
+    transition: 0.3s; /* Smooth transition */
 }
 
-.card:hover { /* Card hover effect */
+.project:hover { /* Project hover effect */
     transform: scale(1.05); /* Slight zoom */
     box-shadow: 10px 10px 15px rgba(0,0,0,0.3); /* Shadow */
 }
 
-.card-title { /* Card titles */
-    font-size: 15px; /* Small size */
+.project h4 { /* Project title */
+    font-size: 18px; /* Size */
+    text-align: center; /* Centered */
+    margin-bottom: 0.5rem; /* Bottom margin */
 }
 
-.card-text { /* Card descriptions */
-    height: 80px; /* Fixed height for consistency */
+.project p { /* Project description */
+    font-size: 14px; /* Size */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+.project .button { /* Button in project */
+    display: block; /* Block display */
+    margin: 0 auto; /* Centers */
+    width: fit-content; /* Fits content */
 }
 
 /* Contact - Styling for contact page */
