@@ -96,9 +96,61 @@ nav ul li a:hover { /* Link hover */
 .content { /* Main content wrapper */
     padding: 2rem; /* Padding around content */
     text-align: center; /* Centers text */
+}
+
+.portfolio-content { /* Specific for portfolio */
     display: flex; /* Flexbox layout */
     flex-wrap: wrap; /* Wrap to next line */
     justify-content: center; /* Centers items */
+}
+
+.hero { /* Hero section */
+    max-width: 600px; /* Max width */
+    margin: 0 auto; /* Centers */
+}
+
+.profile-img { /* Profile image */
+    width: 150px; /* Size */
+    height: 150px; /* Size */
+    border-radius: 50%; /* Circular */
+    margin-bottom: 1rem; /* Bottom margin */
+    border: 5px solid #fff; /* White border */
+}
+
+.hero h1 { /* Hero heading */
+    font-size: 3rem; /* Larger size */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+.hero p { /* Hero paragraph */
+    font-size: 1.2rem; /* Slightly larger */
+    margin-bottom: 2rem; /* Bottom margin */
+}
+
+.skills { /* Skills section */
+    margin-top: 3rem; /* Top margin */
+    text-align: center; /* Centers */
+}
+
+.skills h2 { /* Skills heading */
+    font-size: 2rem; /* Size */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+.skills ul { /* Skills list */
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
+    display: flex; /* Flex for horizontal */
+    justify-content: center; /* Centers */
+    flex-wrap: wrap; /* Wrap */
+}
+
+.skills li { /* Skill items */
+    background: rgba(0,0,0,0.1); /* Light background */
+    margin: 0.5rem; /* Margin */
+    padding: 0.5rem 1rem; /* Padding */
+    border-radius: 0.5rem; /* Rounded */
+    font-weight: bold; /* Bold */
 }
 
 .content .project { /* Projects inside content */
