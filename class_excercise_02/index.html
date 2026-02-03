@@ -2,46 +2,47 @@
 index.html - Home Page
 Purpose: Welcome, intro, navigation hub
 -->
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Meta -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
-        <!-- Boxicons -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <!-- Bootstrap CSS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- CSS Style -->
-        <link href="design.css" rel="stylesheet">
+<!DOCTYPE html> <!-- Declares the document as HTML5 -->
+<html lang="en"> <!-- Root element, language set to English -->
+    <head> <!-- Contains meta information about the document -->
+        <!-- Meta tags for character encoding and responsive design -->
+        <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
+        <!-- External font styles from Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet"> <!-- Loads Lora and Ubuntu fonts -->
+        <!-- Icon library for social media icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Loads Boxicons for icons -->
+        <!-- Bootstrap JavaScript bundle for interactive components -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Includes Bootstrap JS for navbar toggle, etc. -->
+        <!-- Bootstrap CSS framework for styling -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Loads Bootstrap CSS for layout and components -->
+        <!-- Custom CSS file for additional styling -->
+        <link href="design.css" rel="stylesheet"> <!-- Links to our custom stylesheet -->
 
-        <title>Homepage</title>
+        <title>Homepage</title> <!-- Title shown in the browser tab -->
     </head>
-    <body>
-        <!-- Start of the Main Page -->
+    <body> <!-- Main content of the page -->
+        <!-- Main wrapper div for the entire page layout -->
         <div class="main-wrapper">
-            <!-- Start of the Header -->
+            <!-- Header section containing the navigation -->
             <div class="header">
-                <!-- Start of the Navigation Menu -->
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
-                      <a class="navbar-brand" href="index.html"><span class="first-letter">H</span>ello <span class="first-letter">W</span>orld</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <!-- Navigation bar using Bootstrap classes -->
+                <nav class="navbar navbar-expand-lg navbar-light"> <!-- Bootstrap navbar that collapses on small screens -->
+                    <div class="container"> <!-- Bootstrap container for responsive layout -->
+                      <a class="navbar-brand" href="index.html"><span class="first-letter">H</span>ello <span class="first-letter">W</span>orld</a> <!-- Brand link with styled first letters -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Button to toggle menu on mobile -->
+                        <span class="navbar-toggler-icon"></span> <!-- Hamburger icon -->
                       </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link is-active" href="index.html">Home</a>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Collapsible menu content -->
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0"> <!-- Nav list, aligned to the right -->
+                          <li class="nav-item"> <!-- Individual nav item -->
+                            <a class="nav-link is-active" href="index.html">Home</a> <!-- Link to home page, marked as active -->
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">About</a> <!-- Link to about page -->
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="portfolio.html">Portfolio</a> <!-- Link to portfolio page -->
                           </li>
                         </ul>
                       </div>
@@ -50,34 +51,34 @@ Purpose: Welcome, intro, navigation hub
                 <!-- End of the Navigation Menu -->
             </div>
             <!-- End of the Header -->
-            <!-- Start of the Main Content -->
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- Title -->
+            <!-- Main content section with introduction -->
+            <div class="content"> <!-- Wrapper for the main content area -->
+                <div class="container"> <!-- Bootstrap container for centered layout -->
+                    <div class="row"> <!-- Bootstrap row for grid system -->
+                        <div class="col-lg-6"> <!-- Column that takes 6/12 width on large screens -->
+                            <!-- Main heading with line break -->
                             <h1 class="content-title">
                                 Hello there, <br> my name is Manaal Khan.
                             </h1>
-                            <!-- Description -->
+                            <!-- Paragraph describing the person -->
                             <p class="content-description">
                                 I am a graduate of the IB Diploma Program.
                             </p>
-                            <!-- Read More -->
-                            <a class="button btn btn-secondary" href="about.html">Read More &rarr;</a>
+                            <!-- Call-to-action button linking to about page -->
+                            <a class="button btn btn-secondary" href="about.html">Read More &rarr;</a> <!-- Styled button with arrow -->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End of the Main Content -->
-            <!-- Start of the Footer -->
-            <div class="footer">
-                <div class="container">
-                    <div class="socials text-center">
-                        <ul class="footer-list">
-                            <li><a href="#"><i class='bx bxl-github'></i></a></li>
-                            <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
-                            <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+            <!-- Footer section with social media links -->
+            <div class="footer"> <!-- Footer wrapper -->
+                <div class="container"> <!-- Container for footer content -->
+                    <div class="socials text-center"> <!-- Centered social icons -->
+                        <ul class="footer-list"> <!-- Unordered list for social links -->
+                            <li><a href="#"><i class='bx bxl-github'></i></a></li> <!-- GitHub icon link -->
+                            <li><a href="#"><i class='bx bxl-gmail'></i></a></li> <!-- Gmail icon link -->
+                            <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li> <!-- LinkedIn icon link -->
                         </ul>
                     </div>
                 </div>
