@@ -130,7 +130,7 @@ a:hover { /* Link hover effect */
 .content .content-title { /* Title inside content */
     position: relative;
     margin: 0; /* No margin */
-    padding-top: 10rem; /* Large top padding */
+    padding-top: 2rem; /* Reduced top padding to bring text closer */
     padding-bottom: 2rem; /* Bottom padding */
     font-family: "Ubuntu", serif; /* Serif font */
     font-size: 50px; /* Large size */
