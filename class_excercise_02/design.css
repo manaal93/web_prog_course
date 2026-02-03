@@ -1,14 +1,13 @@
 /* General CSS - Basic styling for the entire page */
 
 body, html { /* Applies to body and html elements */
-    background: radial-gradient(circle, rgba(144,130,156,1) 0%, rgba(141,131,131,1) 100%) !important; /* Gradient background with high priority */
+    background: #192841 !important; /* Dark blue theme background */
     margin: 0 auto; /* Centers the page and removes default margins */
     padding: 0; /* Removes default padding */
     height: 100%; /* Full viewport height */
     box-sizing: border-box; /* Includes padding and border in width/height calculations */
     font-family: sans-serif; /* Simple default font */
-    background: #fff; /* Fallback background color */
-    color: #000; /* Default text color */
+    color: #fff; /* Light text color for dark background */
     overflow-x: hidden; /* Hides horizontal overflow */
 }
 
@@ -37,7 +36,7 @@ a:hover { /* Link hover effect */
 .button { /* Custom button class */
     border-radius: 1rem; /* Rounded corners */
     border: none; /* No border */
-    background: radial-gradient(circle, rgba(136,90,195,1) 0%, rgba(147,112,219,1) 100%); /* Gradient background */
+    background: linear-gradient(45deg, #192841, #2a4a6b); /* Blue gradient background */
     transition: 0.3s; /* Transition for effects */
 }
 
@@ -63,7 +62,7 @@ a:hover { /* Link hover effect */
 /* Navigation Menu - Styling for the navbar */
 
 nav { /* Simple nav styling */
-    background: rgba(0,0,0,0.8); /* Semi-transparent black background */
+    background: #0f1a2e; /* Darker shade of theme color */
     padding: 1rem; /* Padding inside nav */
 }
 
@@ -146,7 +145,7 @@ nav ul li a:hover { /* Link hover */
 }
 
 .skills li { /* Skill items */
-    background: rgba(0,0,0,0.1); /* Light background */
+    background: rgba(42,74,107,0.5); /* Semi-transparent lighter blue */
     margin: 0.5rem; /* Margin */
     padding: 0.5rem 1rem; /* Padding */
     border-radius: 0.5rem; /* Rounded */
@@ -224,7 +223,7 @@ nav ul li a:hover { /* Link hover */
 }
 
 .project { /* Project wrapper */
-    background-color: rgba(104,104,104, 0.3); /* Semi-transparent background */
+    background-color: rgba(25,40,65,0.5); /* Semi-transparent theme background */
     margin-bottom: 1rem; /* Bottom margin */
     padding: 1rem; /* Padding inside */
     border-radius: 1rem; /* Rounded corners */
