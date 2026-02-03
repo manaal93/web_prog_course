@@ -1,177 +1,253 @@
-/*
-design.css - Main stylesheet for personal website
-Includes: color, spacing, advanced CSS, responsive design
-*/
+/* General CSS */
 
-/* 1. Color: Set a custom color scheme */
-body {
-	background: linear-gradient(120deg, #f0f4f8 0%, #e0eafc 100%); /* Advanced: gradient background */
-	color: #222;
-	font-family: 'Segoe UI', Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-nav {
-	background: #2a5298; /* Custom color */
-	box-shadow: 0 2px 8px rgba(42,82,152,0.1); /* Advanced: box-shadow */
-}
-nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	justify-content: center;
-}
-nav ul li {
-	margin: 0 1.5rem; /* 2. Spacing: horizontal nav spacing */
-}
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	padding: 0.75rem 1.2rem;
-	border-radius: 8px; /* Advanced: border-radius */
-	transition: background 0.3s; /* Advanced: transition */
-}
-nav ul li a:hover {
-	background: #1e3c72;
+body, html {
+    background: radial-gradient(circle, rgba(144,130,156,1) 0%, rgba(141,131,131,1) 100%) !important;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Lora", sans-serif;
+    background: #fff;
+    color: #000;
+    overflow-x: hidden; /* hide overflow on the sides */
 }
 
-main {
-	max-width: 900px;
-	margin: 2rem auto;
-	padding: 2rem;
-	background: #fff;
-	border-radius: 16px; /* Advanced: border-radius */
-	box-shadow: 0 4px 24px rgba(42,82,152,0.08); /* Advanced: box-shadow */
+ul {
+    list-style: none;
 }
 
-h1, h2, h3 {
-	color: #2a5298;
+img {
+    max-width: 100%;
 }
 
-.project-list {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem; /* 2. Spacing: gap between projects */
-}
-.project {
-	flex: 1 1 250px;
-	background: #f7fafc;
-	border-radius: 12px;
-	box-shadow: 0 2px 8px rgba(42,82,152,0.07);
-	padding: 1rem;
-	margin-bottom: 1rem;
-	transition: transform 0.2s;
-}
-.project:hover {
-	transform: translateY(-4px) scale(1.03);
+/* Links */
+
+a {
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    color: #fff !important;
 }
 
-/* Responsive image/video */
-.responsive-img, .video-container iframe {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
+/* Buttons */
+
+a:hover {
+    color: #bbb !important;
 }
 
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
-	height: 0;
-	overflow: hidden;
-	margin-bottom: 1rem;
-}
-.video-container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.caption {
-	text-align: center;
-	font-size: 0.95rem;
-	color: #555;
+.button {
+    border-radius: 1rem;
+    border: none;
+    background: radial-gradient(circle, rgba(136,90,195,1) 0%, rgba(147,112,219,1) 100%);
+    transition: 0.3s;
 }
 
-/* Form styles */
-form {
-	margin-top: 1.5rem;
-	background: #f0f4f8;
-	padding: 1.5rem;
-	border-radius: 10px;
-	box-shadow: 0 1px 4px rgba(42,82,152,0.05);
-	max-width: 400px;
-}
-label {
-	display: block;
-	margin-bottom: 0.3rem;
-	font-weight: 500;
-}
-input[type="text"], input[type="email"] {
-	width: 100%;
-	padding: 0.5rem;
-	margin-bottom: 0.5rem;
-	border: 1px solid #b0c4de;
-	border-radius: 6px;
-	font-size: 1rem;
-}
-button[type="submit"] {
-	background: #2a5298;
-	color: #fff;
-	border: none;
-	padding: 0.6rem 1.2rem;
-	border-radius: 6px;
-	font-size: 1rem;
-	cursor: pointer;
-	transition: background 0.2s;
-}
-button[type="submit"]:hover {
-	background: #1e3c72;
-}
-.error {
-	color: #d8000c;
-	font-size: 0.9rem;
-	margin-bottom: 0.5rem;
-	display: block;
-}
-.success {
-	color: #388e3c;
-	font-size: 1rem;
-	margin-top: 0.5rem;
-	display: block;
+.button:hover {
+    color: #fff !important;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    transform: scale(1.05);
 }
 
-/* 3. Responsive Design */
-@media (max-width: 768px) {
-	main {
-		padding: 1rem;
-	}
-	.project-list {
-		flex-direction: column;
-		gap: 1rem;
-	}
-	nav ul {
-		flex-direction: column;
-		align-items: center;
-	}
-	nav ul li {
-		margin: 0.5rem 0;
-	}
+/* Titles */
+
+.main-title {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-/* Prevent horizontal overflow at 320px */
-@media (max-width: 400px) {
-	body, main {
-		padding: 0.2rem;
-	}
-	main {
-		border-radius: 0;
-		box-shadow: none;
-	}
-	form {
-		padding: 0.5rem;
-	}
+.main-title h1 {
+    font-size: 40px;
+}
+
+/* Navigation Menu */
+
+.navbar {
+    position: relative;
+    background: rgba(0,0,0,0.8);
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 60px;
+}
+
+.first-letter {
+    font-weight: 700;
+    color: #3F49A4 !important;
+}
+
+.navbar-brand:hover {
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #bbb;
+}
+
+.navbar-collapse {
+    text-align: center; /* centers the navigation menu when collapsed */
+}
+
+.navbar ul li {
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 1.6px;
+}
+
+.is-active {
+    border-bottom: 2px solid #3F49A4;
+}
+
+.is-active:hover {
+    border-bottom: 2px solid #978CD1;
+}
+
+/* Content */
+
+.content {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-weight: 500;
+}
+
+.content .content-title {
+    position: relative;
+    margin: 0;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    font-family: "Ubuntu", serif;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.content .content-description {
+    position: relative;
+    font-size: 25px;
+    color: #000;
+}
+
+.content .content-button {
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+.footer {
+    position: relative; /* using fixed position to make the footer stay at the bottom */
+    background: rgba(0,0,0,0.8);
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.footer .socials .footer-list {
+    position: relative;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+.footer .socials .footer-list li {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer .socials .footer-list li a {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: #3F49A4 !important;
+}
+
+.footer .socials .footer-list li a:hover {
+    color: #978CD1 !important;
+}
+
+/* About */
+
+/* Skills */
+
+.skills-page .card {
+    background-color: rgba(104,104,104, 0.3);
+    margin-bottom: 1rem;
+}
+
+.skills-page .card-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skills-page .card-img-top {
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+/* Portfolio */
+
+.img-portfolio {
+    height: 150px;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(104,104,104, 0.3);
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+.card-title {
+    font-size: 15px;
+}
+
+.card-text {
+    height: 80px;
+}
+
+/* Contact */
+
+.contact-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 10rem;
+}
+
+.contact-container .contact {
+    transition: 0.3s;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+    background-color: rgba(104,104,104, 0.3);
+}
+
+.contact-container .contact:hover {
+    transform: scale(1.05);
+}
+
+.contact-container .button {
+    width: 100%;
+    margin-top: 0.5rem;
 }

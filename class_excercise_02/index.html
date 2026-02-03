@@ -4,35 +4,86 @@ Purpose: Welcome, intro, navigation hub
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Personal Website</title>
-    <link rel="stylesheet" href="class_excercise_02/design.css">
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="class_excercise_02/portfolio.html">Portfolio</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Welcome to My Personal Website</h1>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I'm [Your Name], a web enthusiast. Explore my site to learn more about me and my work.</p>
-        </section>
-        <section>
-            <h2>Featured Video</h2>
-            <!-- Embedded YouTube Video -->
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
-                <p class="caption">A video about my favorite hobby.</p>
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS Style -->
+        <link href="design.css" rel="stylesheet">
+
+        <title>Homepage</title>
+    </head>
+    <body>
+        <!-- Start of the Main Page -->
+        <div class="main-wrapper">
+            <!-- Start of the Header -->
+            <div class="header">
+                <!-- Start of the Navigation Menu -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="index.html"><span class="first-letter">H</span>ello <span class="first-letter">W</span>orld</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link is-active" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                <!-- End of the Navigation Menu -->
             </div>
-        </section>
-    </main>
-</body>
+            <!-- End of the Header -->
+            <!-- Start of the Main Content -->
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Title -->
+                            <h1 class="content-title">
+                                Hello there, <br> my name is Manaal Khan.
+                            </h1>
+                            <!-- Description -->
+                            <p class="content-description">
+                                I am a graduate of the IB Diploma Program.
+                            </p>
+                            <!-- Read More -->
+                            <a class="button btn btn-secondary" href="about.html">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of the Main Content -->
+            <!-- Start of the Footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="socials text-center">
+                        <ul class="footer-list">
+                            <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End of the Footer -->
+        </div>
+        <!-- End of the Main Page -->
+    </body>
 </html>

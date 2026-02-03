@@ -4,90 +4,161 @@ Purpose: Showcase projects/works, includes Subscribe form
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio - My Personal Website</title>
-	<link rel="stylesheet" href="design.css">
-</head>
-<body>
-	<!-- Navigation Bar -->
-	<nav>
-		<ul>
-			<li><a href="../index.html">Home</a></li>
-			<li><a href="../about.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-		</ul>
-	</nav>
-	<main>
-		<h1>My Portfolio</h1>
-		<section>
-			<h2>Projects</h2>
-			<div class="project-list">
-				<!-- Example Project -->
-				<div class="project">
-					<h3>Project One</h3>
-					<img src="https://via.placeholder.com/300x180" alt="Project screenshot" class="responsive-img">
-					<p>A brief description of my project goes here.</p>
-				</div>
-				<!-- Add more projects as needed -->
-			</div>
-		</section>
-		<section>
-			<h2>Subscribe</h2>
-			<!-- Subscribe Form with comments -->
-			<form id="subscribe-form" novalidate>
-				<label for="sub-name">Name:<span style="color:red">*</span></label>
-				<input type="text" id="sub-name" name="sub-name" required aria-required="true">
-				<span class="error" id="name-error"></span>
-				<br>
-				<label for="sub-email">Email:<span style="color:red">*</span></label>
-				<input type="email" id="sub-email" name="sub-email" required aria-required="true">
-				<span class="error" id="email-error"></span>
-				<br>
-				<button type="submit">Subscribe</button>
-				<span class="success" id="success-message"></span>
-			</form>
-			<!-- Inline script for form validation and feedback -->
-			<script>
-			// Subscribe form validation and feedback
-			document.getElementById('subscribe-form').addEventListener('submit', function(e) {
-				e.preventDefault();
-				let valid = true;
-				// Clear previous errors
-				document.getElementById('name-error').textContent = '';
-				document.getElementById('email-error').textContent = '';
-				document.getElementById('success-message').textContent = '';
-				// Name validation
-				const name = document.getElementById('sub-name');
-				if (!name.value.trim()) {
-					document.getElementById('name-error').textContent = 'Name is required.';
-					name.setAttribute('aria-invalid', 'true');
-					valid = false;
-				} else {
-					name.removeAttribute('aria-invalid');
-				}
-				// Email validation
-				const email = document.getElementById('sub-email');
-				if (!email.value.trim()) {
-					document.getElementById('email-error').textContent = 'Email is required.';
-					email.setAttribute('aria-invalid', 'true');
-					valid = false;
-				} else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)) {
-					document.getElementById('email-error').textContent = 'Enter a valid email.';
-					email.setAttribute('aria-invalid', 'true');
-					valid = false;
-				} else {
-					email.removeAttribute('aria-invalid');
-				}
-				// On success
-				if (valid) {
-					document.getElementById('success-message').textContent = 'Thank you for subscribing!';
-					document.getElementById('subscribe-form').reset();
-				}
-			});
-			</script>
-		</section>
-	</main>
-</body>
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS Style -->
+        <link href="design.css" rel="stylesheet">
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- Start of the Portfolio Page -->
+        <div class="main-wrapper">
+            <!-- Start of the Header -->
+            <div class="header">
+                <!-- Start of the Navigation Menu -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="index.html"><span class="first-letter">H</span>ello <span class="first-letter">W</span>orld</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link is-active" href="portfolio.html">Portfolio</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                <!-- End of the Navigation Menu -->
+            </div>
+            <!-- End of the Header -->
+            <!-- Start of the Main Content -->
+            <div class="main-title">
+              <h1>Projects and Research Conducted</h1>
+            </div>
+            <div class="container mt-2">
+              <div class="row">
+                <!-- 1st Project -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="card card-block">
+                  <h4 class="card-title text-center">Personal Project</h4>
+                <img class="img-portfolio" src="https://vyapaar.net/wp-content/uploads/2022/12/project-management-1024x439.png">
+                <h5 class="card-title  mt-3 mb-3"></h5>
+                <p class="card-text">
+                        To create an inclusive environment for the non-hearing
+                        community in Pakistan, through creating a website to teach Sign Language and
+                        limiting the communication gaps.
+                    </p>
+                    <a class="button btn btn-secondary" href="#">See Report</a>
+              </div>
+                </div>
+                <!-- 2nd Project -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="card card-block">
+                  <h4 class="card-title text-center">Design Portfolio</h4>
+                <img class="img-portfolio" src="https://www.projectmanager.com/wp-content/uploads/2021/10/211014_Blog_Feature_Project_Environment-scaled.jpg">
+                    <h5 class="card-title  mt-3 mb-3"></h5>
+                    <p class="card-text">
+                        To create family inclusive game, to promote family
+                        engagement and improve family connections.
+                    </p>
+                    <a class="button btn btn-secondary" href="#">See Report</a>
+              </div>
+                </div>
+                <!-- 3rd Project -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="card card-block">
+                  <h4 class="card-title text-center">Extended Essay in Business Management</h4>
+                <img class="img-portfolio" src="https://cdn-cashy-static-assets.lucidchart.com/marketing/blog/2017Q3/phases-project-management-lifecycle/phases-project-management-lifecycle-header.png">
+                    <h5 class="card-title  mt-3 mb-3"></h5>
+                    <p class="card-text">
+                        How Samsung's smartphone's generic and intensive
+                        growth strategies has given it a competitive edge over Apple's iPhone to sustain
+                        its global market share in the future?
+                    </p>
+                    <a class="button btn btn-secondary" href="#">See Report</a>
+              </div>
+                </div>
+                <!-- 4th Project -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="card card-block">
+                  <h4 class="card-title text-center">Mathematics</h4>
+                <img class="img-portfolio" src="https://m.media-amazon.com/images/I/61EtSQ7KqqL._AC_UF894,1000_QL80_.jpg">
+                    <h5 class="card-title  mt-3 mb-3"></h5>
+                    <p class="card-text">
+                        To determine the optimum model for predicting new lung cancer
+                        cases in the USA
+                    </p>
+                    <a class="button btn btn-secondary" href="#">See Report</a>
+              </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-2">
+              <div class="row">
+                <!-- 5th Project -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="card card-block">
+                  <h4 class="card-title text-center">Physics</h4>
+                <img class="img-portfolio" src="https://media.istockphoto.com/id/936903524/vector/blackboard-inscribed-with-scientific-formulas-and-calculations-in-physics-and-mathematics-can.jpg?s=612x612&w=0&k=20&c=sRLsJbHUVOYvZ_M16hti4fF9NM0RysfjAPUQrCJ8o4U=">
+                    <h5 class="card-title mt-3 mb-3"></h5>
+                    <p class="card-text">
+                        Investigating the change in time period with the variation of distance
+                        between two suspension points to determine the moment of inertia of a
+                        cylindrical rod using a bifilar pendulum
+                    </p>
+                    <a class="button btn btn-secondary" href="#">See Report</a>
+              </div>
+                </div>
+                <!-- 6th Project -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="card card-block">
+                  <h4 class="card-title text-center">Business Management</h4>
+                <img class="img-portfolio" src="https://www.prioritymanagement.com.au/wp-content/uploads/2023/04/what-is-it-project-manager-1.jpg">
+                    <h5 class="card-title  mt-3 mb-3"></h5>
+                    <p class="card-text">
+                        To what extent Askari Bank Limited (ABL), Airport Branch, Lahore can
+                        improve its extended marketing mix strategies to enhance their
+                        customer satisfaction?
+                    </p>
+                    <a class="button btn btn-secondary" href="#">See Report</a>
+              </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of the Main Content -->
+            <!-- Start of the Footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="socials text-center">
+                        <ul class="footer-list">
+                            <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End of the Footer -->
+        </div>
+        <!-- End of the Portfolio Page -->
+    </body>
 </html>
