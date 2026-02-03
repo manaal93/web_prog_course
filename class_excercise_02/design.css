@@ -104,7 +104,7 @@ nav ul li a:hover { /* Link hover */
     justify-content: center; /* Centers items */
 }
 
-.hero { /* Hero section */
+.main { /* main section */
     max-width: 600px; /* Max width */
     margin: 0 auto; /* Centers */
 }
@@ -117,12 +117,12 @@ nav ul li a:hover { /* Link hover */
     border: 5px solid #fff; /* White border */
 }
 
-.hero h1 { /* Hero heading */
+.main h1 { /* main heading */
     font-size: 3rem; /* Larger size */
     margin-bottom: 1rem; /* Bottom margin */
 }
 
-.hero p { /* Hero paragraph */
+.main p { /* main paragraph */
     font-size: 1.2rem; /* Slightly larger */
     margin-bottom: 2rem; /* Bottom margin */
 }
