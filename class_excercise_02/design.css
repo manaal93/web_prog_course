@@ -46,9 +46,9 @@ a:hover { /* Link hover effect */
 }
 
 .button:hover { /* Button hover effect */
-    color: #fff !important; /* Keeps text white */
-    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); /* Adds shadow */
-    transform: scale(1.05); /* Slightly enlarges the button */
+    color: #fff !important; /* text */
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); 
+    transform: scale(1.05); /* enlarges button */
 }
 
 /* Titles - Styling for headings */
@@ -107,7 +107,7 @@ nav ul li a { /* Nav links */
 }
 
 nav ul li a:hover { /* Link hover */
-    background: #2b4e9f; /* Dark gray background on hover */ 
+    background: hsl(222, 76%, 28%); /* Dark gray background on hover */ 
 }
 
 /* Content - Main content area styling */
@@ -134,7 +134,7 @@ nav ul li a:hover { /* Link hover */
     font-size: 1.8rem; 
     margin-top: 2rem; 
     margin-bottom: 1rem; 
-    color: #31587c; /* HERE 2.0*/
+    color: #49739a; /* HERE 2.0*/
 }
 
 .about-content p { 
