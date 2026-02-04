@@ -36,7 +36,7 @@ a:hover { /* Link hover effect */
 .button { /* Custom button class */
     border-radius: 1rem; /* Rounded corners */
     border: none; /* No border */
-    background: linear-gradient(45deg, #192841, #2a4a6b); /* Blue gradient background */
+    background: #2a4a6b; /* Solid blue background */
     transition: 0.3s; /* Transition for effects */
     padding: 0.5rem 1rem; /* Padding for button size */
     color: #fff; /* White text */
