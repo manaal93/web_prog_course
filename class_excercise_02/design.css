@@ -107,7 +107,9 @@ nav ul li a { /* Nav links */
 }
 
 nav ul li a:hover { /* Link hover */
-    background: hsl(222, 76%, 28%); /* Dark gray background on hover */ 
+    background: hsl(222, 70%, 23%);  
+	color: #fff;
+	border-radius: 5px; /* Rounded corners */
 }
 
 /* Content - Main content area styling */
@@ -134,7 +136,7 @@ nav ul li a:hover { /* Link hover */
     font-size: 1.8rem; 
     margin-top: 2rem; 
     margin-bottom: 1rem; 
-    color: #49739a; /* HERE 2.0*/
+    color: #8bb3d8; /* HERE 2.0*/
 }
 
 .about-content p { 
