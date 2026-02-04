@@ -223,6 +223,18 @@ nav ul li a:hover { /* Link hover */
     padding: 1rem; /* Padding */
 }
 
+.footer ul { /* Footer list */
+    list-style: none; /* No bullets */
+    display: flex; /* Flexbox for horizontal */
+    justify-content: center; /* Centers items */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+.footer li { /* Footer list items */
+    margin: 0 0.5rem; /* Horizontal margin */
+}
+
 .footer p { /* Paragraph in footer */
     margin: 0; /* No margin */
 }
