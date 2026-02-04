@@ -74,6 +74,8 @@ a:hover { /* Link hover effect */
 nav { /* Simple nav styling */
     background: #0f1a2e; /* Darker shade of theme color */
     padding: 1rem; /* Padding inside nav */
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center the nav */
 }
 
 nav ul { /* Nav list */
