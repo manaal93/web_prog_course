@@ -221,7 +221,7 @@ nav ul li a:hover { /* Link hover */
 /* Footer - Bottom section styling */
 
 .footer { /* Footer container */
-    background: rgba(25,40,65,0.8); /* Semi-transparent theme background */
+    background: #0f1a2e; /* Same as nav bar */
     color: #fff; /* White text */
     text-align: center; /* Centers text */
     padding: 2rem 1rem; /* More padding */
