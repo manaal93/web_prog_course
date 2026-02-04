@@ -38,6 +38,10 @@ a:hover { /* Link hover effect */
     border: none; /* No border */
     background: linear-gradient(45deg, #192841, #2a4a6b); /* Blue gradient background */
     transition: 0.3s; /* Transition for effects */
+    padding: 0.5rem 1rem; /* Padding for button size */
+    color: #fff; /* White text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block */
 }
 
 .button:hover { /* Button hover effect */
@@ -217,10 +221,10 @@ nav ul li a:hover { /* Link hover */
 /* Footer - Bottom section styling */
 
 .footer { /* Footer container */
-    background: rgba(0,0,0,0.8); /* Semi-transparent background */
+    background: rgba(25,40,65,0.8); /* Semi-transparent theme background */
     color: #fff; /* White text */
     text-align: center; /* Centers text */
-    padding: 1rem; /* Padding */
+    padding: 2rem 1rem; /* More padding */
 }
 
 .footer ul { /* Footer list */
@@ -232,7 +236,7 @@ nav ul li a:hover { /* Link hover */
 }
 
 .footer li { /* Footer list items */
-    margin: 0 0.5rem; /* Horizontal margin */
+    margin: 0 1rem; /* Horizontal margin */
 }
 
 .footer p { /* Paragraph in footer */
