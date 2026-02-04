@@ -218,7 +218,31 @@ nav ul li a:hover { /* Link hover */
     background: #666; /* Darker gray */
 }
 
-/* Footer - Bottom section styling */
+/* Contact - Form styling */
+
+form { /* Form container */
+    max-width: 600px; /* Max width */
+    margin: 0 auto; /* Center */
+}
+
+form label { /* Labels */
+    display: block; /* Block */
+    margin-top: 1rem; /* Top margin */
+    font-weight: bold; /* Bold */
+}
+
+form input, form textarea { /* Inputs and textarea */
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Padding */
+    margin-top: 0.5rem; /* Top margin */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 0.5rem; /* Rounded */
+    box-sizing: border-box; /* Include padding */
+}
+
+form button { /* Submit button */
+    margin-top: 1rem; /* Top margin */
+}
 
 .footer { /* Footer container */
     background: #0f1a2e; /* Same as nav bar */
