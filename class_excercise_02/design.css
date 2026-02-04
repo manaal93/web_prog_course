@@ -51,6 +51,23 @@ a:hover { /* Link hover effect */
     transform: scale(1.05); /* enlarges button */
 }
 
+.action-button { /* Action button class */
+    border-radius: 1rem; /* Rounded corners */
+    border: none; /* No border */
+    background: #2a4a6b; /* Solid blue background */
+    transition: 0.3s; /* Transition for effects */
+    padding: 0.5rem 1rem; /* Padding for button size */
+    color: #fff; /* White text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block */
+}
+
+.action-button:hover { /* Action button hover effect */
+    color: #fff !important; /* Keeps text white */
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); /* Adds shadow */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
 /* Titles - Styling for headings */
 
 .main-title { /* Styles for main title sections */
@@ -108,8 +125,8 @@ nav ul li a { /* Nav links */
 
 nav ul li a:hover { /* Link hover */
     background: hsl(222, 70%, 23%);  
-	color: #fff !important; /* Keep text white */
-	border-radius: 5px; /* Rounded corners */
+	color: #fffffff2 !important;
+	border-radius: 5px; 
 }
 
 /* Content - Main content area styling */
@@ -289,12 +306,6 @@ form button { /* Submit button */
     margin-bottom: 1rem; 
 }
 
-.project .button { /* Button in project */
-    display: block; 
-    margin: 0 auto;
-    width: fit-content; 
-}
-
 /* Contact - Styling for contact page */
 
 .contact-container { /* Contact form container */
@@ -314,7 +325,3 @@ form button { /* Submit button */
     transform: scale(1.05); /* Zoom */
 }
 
-.contact-container .button { /* Button in contact */
-    width: 100%;
-    margin-top: 0.5rem; 
-}
