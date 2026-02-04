@@ -1,28 +1,23 @@
-/* General CSS - Basic styling for the entire page */
 
-body, html { /* Applies to body and html elements */
+body, html { 
     background: #192841 !important; /* Dark blue theme background */
-    margin: 0 auto; /* Centers the page and removes default margins */
-    padding: 0; /* Removes default padding */
-    height: 100%; /* Full viewport height */
-    box-sizing: border-box; /* Includes padding and border in width/height calculations */
-    font-family: sans-serif; /* Simple default font */
-    color: #fff; /* Light text color for dark background */
-    overflow-x: hidden; /* Hides horizontal overflow */
+    margin: 0 auto; 
+    padding: 0; 
+    height: 100%; 
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+    color: #fff; 
+    overflow-x: hidden; 
 }
 
-.main-wrapper { /* Main wrapper for all pages */
-    min-height: 100vh; /* Full viewport height */
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Column direction */
+.main-wrapper { 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
 }
 
-ul { /* Removes default bullets from unordered lists */
-    list-style: none;
-}
-
-img { /* Ensures images are responsive */
-    max-width: 100%; /* Images won't exceed their container width */
+img { /* Ensures Images won't exceed their container width  */
+    max-width: 100%; 
 }
 
 /* Links - Styling for anchor tags */
@@ -60,20 +55,20 @@ a:hover { /* Link hover effect */
 
 .main-title { /* Styles for main title sections */
     position: relative;
-    margin-top: 2rem; /* Top margin */
-    margin-bottom: 2rem; /* Bottom margin */
-    text-align: center; /* Centers the text */
+    margin-top: 2rem; 
+    margin-bottom: 2rem; 
+    text-align: center; 
 }
 
-.main-title h1 { /* Heading inside main-title */
-    font-size: 40px; /* Large font size */
+.main-title h1 {
+    font-size: 40px; 
 }
 
 /* Navigation Menu - Styling for the navbar */
 
-nav { /* Simple nav styling */
+nav { 
     background: #0f1a2e; /* Darker shade of theme color */
-    padding: 1rem; /* Padding inside nav */
+    padding: 1rem; 
 }
 
 nav ul { /* Nav list */
@@ -112,67 +107,59 @@ nav ul li a { /* Nav links */
 }
 
 nav ul li a:hover { /* Link hover */
-    background: #555; /* Dark gray background on hover */
+    background: #2b4e9f; /* Dark gray background on hover */ 
 }
 
 /* Content - Main content area styling */
 
-.content { /* Main content wrapper */
-    padding: 2rem; /* Padding around content */
-    text-align: center; /* Centers text */
-    flex: 1; /* Takes remaining space */
+.content { 
+    padding: 2rem; 
+    text-align: center;
+    flex: 1;
 }
 
 .about-content { /* Specific for about page */
-    max-width: 800px; /* Max width for readability */
-    margin: 0 auto; /* Center the content block */
-    text-align: left; /* Left-align text */
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: left; 
 }
 
-.about-content h1 { /* Main heading */
-    text-align: center; /* Center the title */
-    font-size: 2.5rem; /* Larger size */
-    margin-bottom: 2rem; /* Bottom margin */
+.about-content h1 { 
+    text-align: center; 
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
 }
 
-.about-content h2 { /* Subheadings */
-    font-size: 1.8rem; /* Size */
-    margin-top: 2rem; /* Top margin */
-    margin-bottom: 1rem; /* Bottom margin */
-    color: #4a6b8a; /* Lighter blue for headings */
+.about-content h2 { 
+    font-size: 1.8rem; 
+    margin-top: 2rem; 
+    margin-bottom: 1rem; 
+    color: #31587c; /* HERE 2.0*/
 }
 
-.about-content p { /* Paragraphs */
-    line-height: 1.6; /* Better readability */
-    margin-bottom: 1rem; /* Bottom margin */
+.about-content p { 
+    line-height: 1.6; 
+    margin-bottom: 1rem; 
 }
 
 .about-content ul { /* Lists */
     margin-left: 1.5rem; /* Indent */
-    margin-bottom: 1rem; /* Bottom margin */
+    margin-bottom: 1rem; 
 }
 
 .about-content li { /* List items */
-    margin-bottom: 0.5rem; /* Spacing */
+    margin-bottom: 0.5rem; 
 }
 
-.portfolio-content { /* Specific for portfolio */
-    display: flex; /* Flexbox layout */
-    flex-wrap: wrap; /* Wrap to next line */
-    justify-content: center; /* Centers items */
+.portfolio-content { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
-.main { /* main section */
-    max-width: 600px; /* Max width */
-    margin: 0 auto; /* Centers */
-}
-
-.profile-img { /* Profile image */
-    width: 150px; /* Size */
-    height: 150px; /* Size */
-    border-radius: 50%; /* Circular */
-    margin-bottom: 1rem; /* Bottom margin */
-    border: 5px solid #fff; /* White border */
+.main { 
+    max-width: 600px; 
+    margin: 0 auto;
 }
 
 .main h1 { /* main heading */
@@ -183,32 +170,6 @@ nav ul li a:hover { /* Link hover */
 .main p { /* main paragraph */
     font-size: 1.2rem; /* Slightly larger */
     margin-bottom: 2rem; /* Bottom margin */
-}
-
-.skills { /* Skills section */
-    margin-top: 3rem; /* Top margin */
-    text-align: center; /* Centers */
-}
-
-.skills h2 { /* Skills heading */
-    font-size: 2rem; /* Size */
-    margin-bottom: 1rem; /* Bottom margin */
-}
-
-.skills ul { /* Skills list */
-    list-style: none; /* No bullets */
-    padding: 0; /* No padding */
-    display: flex; /* Flex for horizontal */
-    justify-content: center; /* Centers */
-    flex-wrap: wrap; /* Wrap */
-}
-
-.skills li { /* Skill items */
-    background: rgba(42,74,107,0.5); /* Semi-transparent lighter blue */
-    margin: 0.5rem; /* Margin */
-    padding: 0.5rem 1rem; /* Padding */
-    border-radius: 0.5rem; /* Rounded */
-    font-weight: bold; /* Bold */
 }
 
 .content .project { /* Projects inside content */
@@ -243,75 +204,55 @@ nav ul li a:hover { /* Link hover */
 /* Home - Specific for home page */
 
 .home-wrapper .content { /* Content in home */
-    flex: 1; /* Takes remaining space */
+    flex: 1;
 }
 
 form { /* Form container */
-    max-width: 600px; /* Max width */
-    margin: 0 auto; /* Center */
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
-form label { /* Labels */
-    display: block; /* Block */
-    margin-top: 1rem; /* Top margin */
-    font-weight: bold; /* Bold */
+form label { 
+    display: block; 
+    margin-top: 1rem; 
+    font-weight: bold; 
 }
 
 form input, form textarea { /* Inputs and textarea */
-    width: 70%; /* Shorter width */
-    padding: 0.5rem; /* Padding */
-    margin: 0.5rem auto; /* Top margin and center */
-    border: 1px solid #ccc; /* Border */
-    border-radius: 0.5rem; /* Rounded */
-    box-sizing: border-box; /* Include padding */
-    display: block; /* Block for centering */
+    width: 70%; 
+    padding: 0.5rem; 
+    margin: 0.5rem auto; 
+    border: 1px solid #ccc; 
+    border-radius: 0.5rem; 
+    box-sizing: border-box; 
+    display: block; 
 }
 
 form button { /* Submit button */
-    margin-top: 1rem; /* Top margin */
+    margin-top: 1rem; 
 }
 
 .footer { /* Footer container */
-    background: #0f1a2e; /* Same as nav bar */
-    color: #fff; /* White text */
-    text-align: center; /* Centers text */
-    padding: 2rem 1rem; /* More padding */
+    background: #0f1a2e; 
+    color: #fff; 
+    text-align: center; 
+    padding: 2rem 1rem; 
 }
 
 .footer ul { /* Footer list */
     list-style: none; /* No bullets */
-    display: flex; /* Flexbox for horizontal */
-    justify-content: center; /* Centers items */
-    margin: 0; /* No margin */
-    padding: 0; /* No padding */
+    display: flex; 
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .footer li { /* Footer list items */
-    margin: 0 1rem; /* Horizontal margin */
+    margin: 0 1rem; 
 }
 
-.footer p { /* Paragraph in footer */
-    margin: 0; /* No margin */
-}
-
-/* About - Styling for about page */
-
-/* Skills - Card styling for skills section */
-
-.skills-page .card { /* Skill cards */
-    background-color: rgba(104,104,104, 0.3); /* Semi-transparent gray */
-    margin-bottom: 1rem; /* Bottom margin */
-}
-
-.skills-page .card-title { /* Card titles */
-    text-align: center; /* Centered */
-    font-size: 20px; /* Size */
-    font-weight: 700; /* Bold */
-}
-
-.skills-page .card-img-top { /* Top images in cards */
-    padding: 1rem; /* Padding for images */
-    border-radius: 10%; /* Rounded corners */
+.footer p { 
+    margin: 0; 
 }
 
 /* Portfolio - Styling for portfolio page */
@@ -323,48 +264,48 @@ form button { /* Submit button */
 }
 
 .project { /* Project wrapper */
-    background-color: #2a4a6b; /* Solid lighter blue background */
-    margin-bottom: 1rem; /* Bottom margin */
+    background-color: #2a4a6b; 
+    margin-bottom: 1rem; 
     padding: 1rem; /* Padding inside */
     border-radius: 1rem; /* Rounded corners */
-    transition: 0.3s; /* Smooth transition */
+    transition: 0.3s; 
 }
 
 .project:hover { /* Project hover effect */
-    transform: scale(1.05); /* Slight zoom */
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.3); /* Shadow */
+    transform: scale(1.05); 
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3); 
 }
 
 .project h4 { /* Project title */
-    font-size: 18px; /* Size */
-    text-align: center; /* Centered */
-    margin-bottom: 0.5rem; /* Bottom margin */
+    font-size: 18px;
+    text-align: center; 
+    margin-bottom: 0.5rem; 
 }
 
 .project p { /* Project description */
-    font-size: 14px; /* Size */
-    margin-bottom: 1rem; /* Bottom margin */
+    font-size: 15px; 
+    margin-bottom: 1rem; 
 }
 
 .project .button { /* Button in project */
-    display: block; /* Block display */
-    margin: 0 auto; /* Centers */
-    width: fit-content; /* Fits content */
+    display: block; 
+    margin: 0 auto;
+    width: fit-content; 
 }
 
 /* Contact - Styling for contact page */
 
 .contact-container { /* Contact form container */
-    padding-left: 5rem; /* Left padding */
-    padding-right: 5rem; /* Right padding */
-    margin-top: 10rem; /* Top margin */
+    padding-left: 5rem; 
+    padding-right: 5rem; 
+    margin-top: 10rem; 
 }
 
-.contact-container .contact { /* Contact form */
-    transition: 0.3s; /* Transition */
-    border-radius: 1rem; /* Rounded */
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1); /* Shadow */
-    background-color: rgba(104,104,104, 0.3); /* Background */
+.contact-container .contact { 
+    transition: 0.3s;
+    border-radius: 1rem; 
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1); 
+    background-color: rgba(104,104,104, 0.3);
 }
 
 .contact-container .contact:hover { /* Form hover */
@@ -372,6 +313,6 @@ form button { /* Submit button */
 }
 
 .contact-container .button { /* Button in contact */
-    width: 100%; /* Full width */
-    margin-top: 0.5rem; /* Top margin */
+    width: 100%;
+    margin-top: 0.5rem; 
 }
