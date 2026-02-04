@@ -64,10 +64,10 @@ a:hover { /* Link hover effect */
     font-size: 40px; 
 }
 
-/* Navigation Menu - Styling for the navbar */
+/* Navigation bar */
 
 nav { 
-    background: #0f1a2e; /* Darker shade of theme color */
+    background: #0f1a2e; 
     padding: 1rem; 
 }
 
@@ -82,15 +82,15 @@ nav ul { /* Nav list */
 }
 
 nav ul li { /* Nav list items */
-    margin: 0 0.5rem; /* Horizontal margin */
+    margin: 0 0.5rem; 
 }
 
 @media (max-width: 600px) { /* For small screens */
     nav { /* Nav on small screens */
-        padding: 0.5rem; /* Less padding */
+        padding: 0.5rem; 
     }
     nav ul { /* Nav ul on small screens */
-        max-width: none; /* No max width */
+        max-width: none; 
     }
     nav ul li { /* Nav items on small screens */
         margin: 0 0.25rem; /* Less margin */
@@ -100,7 +100,7 @@ nav ul li { /* Nav list items */
 
 nav ul li a { /* Nav links */
     color: #fff; /* White text */
-    text-decoration: none; /* Removes underline */
+    text-decoration: none; 
     font-weight: bold; /* Bold text */
     padding: 0.5rem 1rem; /* Padding */
     transition: background 0.3s; /* Smooth transition */
@@ -108,7 +108,7 @@ nav ul li a { /* Nav links */
 
 nav ul li a:hover { /* Link hover */
     background: hsl(222, 70%, 23%);  
-	color: #fff;
+	color: #fff !important; /* Keep text white */
 	border-radius: 5px; /* Rounded corners */
 }
 
