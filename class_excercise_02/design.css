@@ -74,8 +74,6 @@ a:hover { /* Link hover effect */
 nav { /* Simple nav styling */
     background: #0f1a2e; /* Darker shade of theme color */
     padding: 1rem; /* Padding inside nav */
-    max-width: 1200px; /* Max width for large screens */
-    margin: 0 auto; /* Center the nav */
 }
 
 nav ul { /* Nav list */
@@ -84,6 +82,8 @@ nav ul { /* Nav list */
     justify-content: center; /* Centers items */
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center the ul */
 }
 
 nav ul li { /* Nav list items */
@@ -93,6 +93,9 @@ nav ul li { /* Nav list items */
 @media (max-width: 600px) { /* For small screens */
     nav { /* Nav on small screens */
         padding: 0.5rem; /* Less padding */
+    }
+    nav ul { /* Nav ul on small screens */
+        max-width: none; /* No max width */
     }
     nav ul li { /* Nav items on small screens */
         margin: 0 0.25rem; /* Less margin */
