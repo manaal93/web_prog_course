@@ -258,12 +258,13 @@ form label { /* Labels */
 }
 
 form input, form textarea { /* Inputs and textarea */
-    width: 100%; /* Full width */
+    width: 70%; /* Shorter width */
     padding: 0.5rem; /* Padding */
-    margin-top: 0.5rem; /* Top margin */
-    border: 1px solid #cccccc83; /* Border */
+    margin: 0.5rem auto; /* Top margin and center */
+    border: 1px solid #ccc; /* Border */
     border-radius: 0.5rem; /* Rounded */
     box-sizing: border-box; /* Include padding */
+    display: block; /* Block for centering */
 }
 
 form button { /* Submit button */
