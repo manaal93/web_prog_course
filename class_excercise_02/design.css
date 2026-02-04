@@ -127,9 +127,7 @@ nav ul li a:hover { /* Link hover */
 }
 
 .portfolio-content { /* Specific for portfolio */
-    display: flex; /* Flexbox layout */
-    flex-wrap: wrap; /* Wrap to next line */
-    justify-content: center; /* Centers items */
+    text-align: center; /* Center the inline-block projects */
 }
 
 .main { /* main section */
@@ -182,9 +180,10 @@ nav ul li a:hover { /* Link hover */
 }
 
 .content .project { /* Projects inside content */
-    flex: 1 1 30%; /* Flexible width, min 30% */
-    max-width: 300px; /* Max width */
+    display: inline-block; /* Inline block for grid-like layout */
+    width: calc(33.333% - 2rem); /* 3 per row, accounting for margins */
     margin: 1rem; /* Margin around each */
+    vertical-align: top; /* Align tops */
 }
 
 .content h1 { /* Heading in content */
