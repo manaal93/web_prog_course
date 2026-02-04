@@ -218,7 +218,17 @@ nav ul li a:hover { /* Link hover */
     background: #666; /* Darker gray */
 }
 
-/* Contact - Form styling */
+/* Home - Specific for home page */
+
+.home-wrapper { /* Home page wrapper */
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column direction */
+}
+
+.home-wrapper .content { /* Content in home */
+    flex: 1; /* Takes remaining space */
+}
 
 form { /* Form container */
     max-width: 600px; /* Max width */
