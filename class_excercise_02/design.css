@@ -94,7 +94,36 @@ nav ul li a:hover { /* Link hover */
 
 .content { /* Main content wrapper */
     padding: 2rem; /* Padding around content */
-    text-align: center; /* Centers text */
+    max-width: 800px; /* Max width for readability */
+    margin: 0 auto; /* Center the content block */
+    text-align: left; /* Left-align text */
+}
+
+.content h1 { /* Main heading */
+    text-align: center; /* Center the title */
+    font-size: 2.5rem; /* Larger size */
+    margin-bottom: 2rem; /* Bottom margin */
+}
+
+.content h2 { /* Subheadings */
+    font-size: 1.8rem; /* Size */
+    margin-top: 2rem; /* Top margin */
+    margin-bottom: 1rem; /* Bottom margin */
+    color: #4a6b8a; /* Lighter blue for headings */
+}
+
+.content p { /* Paragraphs */
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+.content ul { /* Lists */
+    margin-left: 1.5rem; /* Indent */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+.content li { /* List items */
+    margin-bottom: 0.5rem; /* Spacing */
 }
 
 .portfolio-content { /* Specific for portfolio */
