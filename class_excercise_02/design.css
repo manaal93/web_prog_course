@@ -16,9 +16,6 @@ body, html {
     flex-direction: column; 
 }
 
-img { /* Ensures Images won't exceed their container width  */
-    max-width: 100%; 
-}
 
 /* Links - Styling for anchor tags */
 
