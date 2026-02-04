@@ -1,61 +1,43 @@
-<!--
-index.html - Home Page
-Purpose: Welcome, intro, navigation hub
--->
-<!DOCTYPE html> <!-- Declares the document as HTML5 -->
-<html lang="en"> <!-- Root element, language set to English -->
-    <head> <!-- Contains meta information about the document -->
-        <!-- Meta tags for character encoding and responsive design -->
-        <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
-        <!-- Custom CSS file for additional styling -->
-        <link href="design.css" rel="stylesheet"> <!-- Links to our custom stylesheet -->
+<!-- Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="design.css" rel="stylesheet">
 
-        <title>Homepage</title> <!-- Title shown in the browser tab -->
+        <title>Homepage</title>
     </head>
-    <body> <!-- Main content of the page -->
-        <!-- Main wrapper div for the entire page layout -->
+    <body> 
         <div class="main-wrapper home-wrapper">
-            <!-- Header section containing the navigation -->
             <div class="header">
-                <!-- Simple navigation bar -->
-                <nav> <!-- Navigation menu -->
-                    <ul> <!-- Unordered list for nav items -->
-                        <li><a href="index.html">Home</a></li> <!-- Link to home page -->
-                        <li><a href="about.html">About</a></li> <!-- Link to about page -->
-                        <li><a href="portfolio.html">Portfolio</a></li> <!-- Link to portfolio page -->
-                        <li><a href="contact.html">Contact</a></li> <!-- Link to contact page -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <!-- End of the Header -->
-            <!-- Main content section with introduction -->
-            <div class="content"> <!-- Wrapper for the main content area -->
-                <!-- main section with image and text -->
+            <div class="content">
                 <div class="main">
-                    <!-- Main heading with line break -->
                     <h1>
                         Welcome page<br>
                     </h1>
-                    <!-- Paragraph describing the person -->
                     <p>
                         I'm Manaal, a student passionate for technology and desgin at Lingnan University. The platform is a collection of work, ideas, and ongoing development is presented here, highlighting key projects and areas of focus.                    </p>
-                    <!-- Call-to-action button linking to about page -->
-                    <a href="about.html" class="button">Read More &rarr;</a> <!-- Link with arrow, styled as button -->
+                    <a href="about.html" class="button">Read More &rarr;</a> 
                 </div>
                 
             </div>
-            <!-- End of the Main Content -->
-            <!-- Footer section with social media links -->
-            <div class="footer"> <!-- Footer wrapper -->
+            <div class="footer">
                 <ul>
                     <li><a href="https://github.com" class="button">GitHub</a></li>
                     <li><a href="https://mail.google.com" class="button">Gmail</a></li>
                     <li><a href="https://linkedin.com" class="button">LinkedIn</a></li>
                 </ul>
             </div>
-            <!-- End of the Footer -->
         </div>
-        <!-- End of the Main Page -->
     </body>
 </html>
