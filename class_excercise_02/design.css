@@ -11,6 +11,12 @@ body, html { /* Applies to body and html elements */
     overflow-x: hidden; /* Hides horizontal overflow */
 }
 
+.main-wrapper { /* Main wrapper for all pages */
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column direction */
+}
+
 ul { /* Removes default bullets from unordered lists */
     list-style: none;
 }
@@ -99,6 +105,7 @@ nav ul li a:hover { /* Link hover */
 .content { /* Main content wrapper */
     padding: 2rem; /* Padding around content */
     text-align: center; /* Centers text */
+    flex: 1; /* Takes remaining space */
 }
 
 .about-content { /* Specific for about page */
@@ -219,12 +226,6 @@ nav ul li a:hover { /* Link hover */
 }
 
 /* Home - Specific for home page */
-
-.home-wrapper { /* Home page wrapper */
-    min-height: 100vh; /* Full viewport height */
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Column direction */
-}
 
 .home-wrapper .content { /* Content in home */
     flex: 1; /* Takes remaining space */
