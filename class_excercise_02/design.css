@@ -87,7 +87,17 @@ nav ul { /* Nav list */
 }
 
 nav ul li { /* Nav list items */
-    margin: 0 1rem; /* Horizontal margin */
+    margin: 0 0.5rem; /* Horizontal margin */
+}
+
+@media (max-width: 600px) { /* For small screens */
+    nav { /* Nav on small screens */
+        padding: 0.5rem; /* Less padding */
+    }
+    nav ul li { /* Nav items on small screens */
+        margin: 0 0.25rem; /* Less margin */
+        font-size: 14px; /* Smaller font */
+    }
 }
 
 nav ul li a { /* Nav links */
