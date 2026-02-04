@@ -223,7 +223,7 @@ nav ul li a:hover { /* Link hover */
 }
 
 .project { /* Project wrapper */
-    background-color: rgba(42,74,107,0.7); /* Semi-transparent lighter blue background */
+    background-color: #2a4a6b; /* Solid lighter blue background */
     margin-bottom: 1rem; /* Bottom margin */
     padding: 1rem; /* Padding inside */
     border-radius: 1rem; /* Rounded corners */
