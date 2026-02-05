@@ -190,7 +190,7 @@ nav ul li a:hover { /* Link hover */
     margin-bottom: 2rem; /* Bottom margin */
 }
 
-.content a { /* Link in content */
+.content a:not(.button) { /* Link in content that are NOT buttons */
     display: inline-block; /* Inline block */
     padding: 0.5rem 1rem; /* Padding */
     background: #888; /* Gray background */
@@ -199,7 +199,7 @@ nav ul li a:hover { /* Link hover */
     border-radius: 5px; /* Rounded corners */
 }
 
-.content a:hover { /* Link hover */
+.content a:not(.button):hover { /* Link hover */
     background: #666; /* Darker gray */
 }
 
