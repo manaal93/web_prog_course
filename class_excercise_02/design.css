@@ -16,7 +16,6 @@ body, html {
     flex-direction: column; 
 }
 
-
 /* Links */
 a {
     text-decoration: none;
@@ -85,7 +84,7 @@ nav ul li a {
 nav ul li a:hover {
     background: hsl(222, 70%, 23%);  
 	color: #fffffff2 !important;
-	border-radius: 5px; 
+	border-radius: 7px; 
 }
 
 /* Content - Main content area styling */
@@ -206,7 +205,7 @@ nav ul li a:hover {
 { 
     border-radius: 1rem;
     border: none;
-    background: #2a4a6b;
+    background: hsl(222, 70%, 23%);
     transition: 0.3s;
     padding: 0.5rem 1rem;
     color: #fff;
