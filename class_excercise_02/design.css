@@ -266,7 +266,7 @@ form button { /* Submit button */
 }
 
 .project { /* Project wrapper */
-    background-color: #2a4a6b; 
+    background-color: hsl(210, 44%, 29%); 
     margin-bottom: 1rem; 
     padding: 1rem; /* Padding inside */
     border-radius: 1rem; /* Rounded corners */
@@ -275,7 +275,7 @@ form button { /* Submit button */
 
 .project:hover { /* Project hover effect */
     transform: scale(1.05); 
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.3); 
+    box-shadow: 10px 10px 15px #0f1a2e; 
 }
 
 .project h4 { /* Project title */
