@@ -23,37 +23,50 @@ img { /* Ensures Images won't exceed their container width  */
 /* Links - Styling for anchor tags */
 
 a { /* General link styling */
-    text-decoration: none; /* Removes underline */
-    transition: all 0.5s ease-in-out; /* Smooth transition for hover effects */
-    color: #fff !important; /* Forces white color */
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    color: #fff !important;
 }
 
 /* Buttons - Custom button styles */
-
-a:hover { /* Link hover effect */
-    color: #bbb !important; /* Changes color on hover */
+.button { 
+    border-radius: 1rem;
+    border: none;
+    background: #2a4a6b;
+    transition: 0.3s;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.button { /* Custom button class */
-    border-radius: 1rem; /* Rounded corners */
-    border: none; /* No border */
-    background: #2a4a6b; /* Solid blue background */
-    transition: 0.3s; /* Transition for effects */
-    padding: 0.5rem 1rem; /* Padding for button size */
-    color: #fff; /* White text */
-    text-decoration: none; /* No underline */
-    display: inline-block; /* Inline block */
-}
-
-.button:hover { /* Button hover effect */
-    color: #fff !important; /* text */
+.button:hover {
+    color: #fff !important;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); 
-    transform: scale(1.05); /* enlarges button */
+    transform: scale(1.05); 
+}
+
+.portfolio-button
+{ 
+    border-radius: 1rem;
+    border: none;
+    background: #2a4a6b;
+    transition: 0.3s;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.portfolio-button:hover
+{
+    color: #fff !important;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); 
+    transform: scale(1.05); 
 }
 
 /* Titles - Styling for headings */
-
-.main-title { /* Styles for main title sections */
+.main-title {
     position: relative;
     margin-top: 2rem; 
     margin-bottom: 2rem; 
@@ -65,23 +78,22 @@ a:hover { /* Link hover effect */
 }
 
 /* Navigation bar */
-
 nav { 
     background: #0f1a2e; 
     padding: 1rem; 
 }
 
-nav ul { /* Nav list */
-    list-style: none; /* Removes bullets */
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Centers items */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    max-width: 1200px; /* Max width for large screens */
-    margin: 0 auto; /* Center the ul */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav ul li { /* Nav list items */
+nav ul li {
     margin: 0 0.5rem; 
 }
 
@@ -89,31 +101,30 @@ nav ul li { /* Nav list items */
     nav { /* Nav on small screens */
         padding: 0.5rem; 
     }
-    nav ul { /* Nav ul on small screens */
+    nav ul {
         max-width: none; 
     }
     nav ul li { /* Nav items on small screens */
-        margin: 0 0.25rem; /* Less margin */
-        font-size: 14px; /* Smaller font */
+        margin: 0 0.25rem;
+        font-size: 14px;
     }
 }
 
-nav ul li a { /* Nav links */
-    color: #fff; /* White text */
+nav ul li a {
+    color: #fff;
     text-decoration: none; 
-    font-weight: bold; /* Bold text */
-    padding: 0.5rem 1rem; /* Padding */
-    transition: background 0.3s; /* Smooth transition */
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
 }
 
-nav ul li a:hover { /* Link hover */
+nav ul li a:hover {
     background: hsl(222, 70%, 23%);  
 	color: #fffffff2 !important;
 	border-radius: 5px; 
 }
 
 /* Content - Main content area styling */
-
 .content { 
     padding: 2rem; 
     text-align: center;
@@ -209,47 +220,23 @@ nav ul li a:hover { /* Link hover */
     flex: 1;
 }
 
-form { /* Form container */
-    max-width: 600px; 
-    margin: 0 auto; 
-}
-
-form label { 
-    display: block; 
-    margin-top: 1rem; 
-    font-weight: bold; 
-}
-
-form input, form textarea { /* Inputs and textarea */
-    width: 70%; 
-    padding: 0.5rem; 
-    margin: 0.5rem auto; 
-    border: 1px solid #ccc; 
-    border-radius: 0.5rem; 
-    box-sizing: border-box; 
-    display: block; 
-}
-
-form button { /* Submit button */
-    margin-top: 1rem; 
-}
-
-.footer { /* Footer container */
+/* Footer */
+.footer {
     background: #0f1a2e; 
     color: #fff; 
     text-align: center; 
     padding: 2rem 1rem; 
 }
 
-.footer ul { /* Footer list */
-    list-style: none; /* No bullets */
+.footer ul {
+    list-style: none;
     display: flex; 
     justify-content: center; 
     margin: 0; 
     padding: 0; 
 }
 
-.footer li { /* Footer list items */
+.footer li {
     margin: 0 1rem; 
 }
 
@@ -257,41 +244,40 @@ form button { /* Submit button */
     margin: 0; 
 }
 
-/* Portfolio - Styling for portfolio page */
+/* Portfolio page */
 
-.img-portfolio { /* Portfolio images */
-    height: 150px; /* Fixed height */
-    width: 100%; /* Full width */
-    object-fit: cover; /* Ensures image covers the area without distortion */
+.img-portfolio {
+    height: 150px;
+    width: 100%;
+    object-fit: cover; /* Fixes distortion */
 }
 
-.project { /* Project wrapper */
+.project {
     background-color: #2a4a6b; 
     margin-bottom: 1rem; 
-    padding: 1rem; /* Padding inside */
-    border-radius: 1rem; /* Rounded corners */
+    padding: 1rem;
+    border-radius: 1rem;
     transition: 0.3s; 
 }
 
-.project:hover { /* Project hover effect */
+.project:hover {
     transform: scale(1.05); 
     box-shadow: 10px 10px 15px rgba(0,0,0,0.3); 
 }
 
-.project h4 { /* Project title */
+.project h4 {
     font-size: 18px;
     text-align: center; 
     margin-bottom: 0.5rem; 
 }
 
-.project p { /* Project description */
+.project p {
     font-size: 15px; 
     margin-bottom: 1rem; 
 }
 
 /* Contact - Styling for contact page */
-
-.contact-container { /* Contact form container */
+.contact-container {
     padding-left: 5rem; 
     padding-right: 5rem; 
     margin-top: 10rem; 
@@ -304,6 +290,6 @@ form button { /* Submit button */
     background-color: rgba(104,104,104, 0.3);
 }
 
-.contact-container .contact:hover { /* Form hover */
-    transform: scale(1.05); /* Zoom */
+.contact-container .contact:hover {
+    transform: scale(1.05);
 }
