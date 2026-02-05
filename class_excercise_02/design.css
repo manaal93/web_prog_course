@@ -26,7 +26,7 @@ a {
 .portfolio-button{ 
     border-radius: 7rem !important;
     border: none;
-    background: #0f1a2e!important;
+    background: #162643!important;
     transition: 0.3s;
     padding: 0.5rem 1rem;
     color: #fff;
@@ -251,7 +251,7 @@ nav ul li a:hover {
 }
 
 .project p {
-    font-size: 15px; 
+    font-size: 15px !important; 
     margin-bottom: 1rem; 
 }
 
