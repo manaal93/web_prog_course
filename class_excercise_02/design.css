@@ -24,9 +24,9 @@ a {
 }
 
 .portfolio-button{ 
-    border-radius: 15rem;
+    border-radius: 7rem !important;
     border: none;
-    background: hsl(303, 73%, 41%)!important;
+    background: #2a4a6b!important;
     transition: 0.3s;
     padding: 0.5rem 1rem;
     color: #fff;
