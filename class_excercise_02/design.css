@@ -203,9 +203,9 @@ nav ul li a:hover {
 /* Portfolio page */
 .portfolio-button
 { 
-    border-radius: 5rem;
+    border-radius: 15rem;
     border: none;
-    background: hsla(79, 73%, 41%, 0.628);
+    background: hsl(303, 73%, 41%);
     transition: 0.3s;
     padding: 0.5rem 1rem;
     color: #fff;
