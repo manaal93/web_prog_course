@@ -66,9 +66,9 @@ a:hover { /* Link hover effect */
 
 /* Navigation bar */
 
-nav { /* Simple nav styling */
-    background: rgba(0,0,0,0.8); /* Semi-transparent black background */
-    padding: 1rem; /* Padding inside nav */
+nav { 
+    background: #0f1a2e; 
+    padding: 1rem; 
 }
 
 nav ul { /* Nav list */
@@ -266,7 +266,7 @@ form button { /* Submit button */
 }
 
 .project { /* Project wrapper */
-    background-color: hsl(210, 44%, 29%); 
+    background-color: #2a4a6b; 
     margin-bottom: 1rem; 
     padding: 1rem; /* Padding inside */
     border-radius: 1rem; /* Rounded corners */
@@ -275,7 +275,7 @@ form button { /* Submit button */
 
 .project:hover { /* Project hover effect */
     transform: scale(1.05); 
-    box-shadow: 10px 10px 15px #0f1a2e; 
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3); 
 }
 
 .project h4 { /* Project title */
@@ -307,4 +307,3 @@ form button { /* Submit button */
 .contact-container .contact:hover { /* Form hover */
     transform: scale(1.05); /* Zoom */
 }
-
