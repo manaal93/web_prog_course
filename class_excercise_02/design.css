@@ -63,15 +63,10 @@ nav {
     padding: 1rem;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
 }
 
 nav ul {
@@ -137,6 +132,10 @@ nav ul li .dropdown-menu a.button {
 
 nav ul li.dropdown:hover .dropdown-menu {
     display: flex;
+}
+
+.header {
+    display: none;
 }
 
 /* All Content */
