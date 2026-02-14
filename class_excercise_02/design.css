@@ -128,6 +128,11 @@ nav ul li .dropdown-menu a {
     white-space: nowrap;
 }
 
+nav ul li .dropdown-menu a.button {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.9rem;
+}
+
 nav ul li.dropdown:hover .dropdown-menu {
     display: block;
 }
