@@ -14,10 +14,8 @@ img {
 }
 
 .main-wrapper {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
 }
 
 a {
@@ -344,6 +342,7 @@ form button {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    margin-top: 70px;
 }
 
 .hero-section img {
