@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Experience Page</title>
-  <link rel="stylesheet" href="design.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="design.css" rel="stylesheet">
+
+        <title>Professional Experience</title>
+    </head>
   <style>
     /* Inline CSS */
     table {
@@ -10,95 +14,89 @@
       margin: 0 auto;
       border-collapse: collapse;
     }
-
-    /* Internal CSS */
-    .dark-mode table {
-      background-color: darkblue;
-      color: white;
-    }
   </style>
-</head>
-<body>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="experience.html" class="active">Experience</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Experience Section -->
-  <section class="experience-section">
-    <h1>Experience</h1>
-    <div class="experience-content">
-      <table>
-        <thead>
-          <tr>
-            <th>Job Title</th>
-            <th>Company</th>
-            <th>Job Duties</th>
-            <th>Duration</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Digital Tech Tntern</td>
-            <td>Lumi Voce</td>
-            <td>
-                <ul>
-                    <li>Maintained and updated website content using a CMS, 
-                        ensuring accuracy and brand consistency.</li>
+    <body>
+        <div class="main-wrapper">
+            <div class="header">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="button">Home</a></li> 
+                            <li><a href="about.html" class="button">About</a></li> 
+                            <li><a href="portfolio.html" class="button">Portfolio</a></li>
+                            <li><a href="contact.html" class="button">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>  
+            <!-- Experience Section -->
+            <section>
+                <h1>Experience</h1>
+                <div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <th>Job Duties</th>
+                        <th>Duration</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Digital Tech Tntern</td>
+                        <td>Lumi Voce</td>
+                        <td>
+                            <ul>
+                                <li>Maintained and updated website content using a CMS, 
+                                    ensuring accuracy and brand consistency.</li>
 
-                    <li>Created and formatted landing pages, blog posts, and 
-                        resource pages using HTML/CSS</li>
+                                <li>Created and formatted landing pages, blog posts, and 
+                                    resource pages using HTML/CSS</li>
 
-                    <li>Coordinated with designers/developers to test and 
-                        deploy site updates and feature enhancements.</li>
+                                <li>Coordinated with designers/developers to test and 
+                                    deploy site updates and feature enhancements.</li>
 
-                    <li>Provided technical support for website maintenance, 
-                        reducing downtime by 10% and improving overall site performance.</li>
-                </ul>
-            </td>
-            <td>Jan 2026 - Present</td>
-          </tr>
+                                <li>Provided technical support for website maintenance, 
+                                    reducing downtime by 10% and improving overall site performance.</li>
+                            </ul>
+                        </td>
+                        <td>Jan 2026 - Present</td>
+                    </tr>
 
-          <tr>
-            <td>Summer Intern</td>
-            <td>Hong Kong Government, Civil Aviation Department (CAD)</td>
-            <td>
-                <ul>
-                    <li>Assisted in organizing departmental events that 
-                        improved communication and collaboration.</li>
+                    <tr>
+                        <td>Summer Intern</td>
+                        <td>Hong Kong Government, Civil Aviation Department (CAD)</td>
+                        <td>
+                            <ul>
+                                <li>Assisted in organizing departmental events that 
+                                    improved communication and collaboration.</li>
 
-                    <li>Edited and compiled over 300 Excel files, 
-                        improving data accuracy by 30%.</li>
+                                <li>Edited and compiled over 300 Excel files, 
+                                    improving data accuracy by 30%.</li>
 
-                    <li>Organized and entered data for 1,000+ records in 
-                        internal systems, streamlining workflows.</li>
+                                <li>Organized and entered data for 1,000+ records in 
+                                    internal systems, streamlining workflows.</li>
 
-                    <li>Assisted in data analysis that contributed to a 
-                        15% increase in departmental efficiency.</li>
-                </ul>
-            </td>
-            <td>June 2025 - August 2025</td>
-          </tr>
+                                <li>Assisted in data analysis that contributed to a 
+                                    15% increase in departmental efficiency.</li>
+                            </ul>
+                        </td>
+                        <td>June 2025 - August 2025</td>
+                    </tr>
 
-        </tbody>
-      </table>
-    </div>
-  </section>
+                    </tbody>
+                </table>
+                </div>
+            </section>
+        </div>
+    <!-- JavaScript for theme toggle -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
 
-  <!-- JavaScript for theme toggle -->
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-    });
-  </script>
-</body>
+        themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        });
+    </script>
+    </body>
 </html>
