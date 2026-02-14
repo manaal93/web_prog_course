@@ -224,12 +224,19 @@ nav ul li.dropdown:hover .dropdown-menu {
 }
 
 .portfolio-container {
-    flex: 1 1 40% !important;
-    max-width: 400px !important;
-    margin: 1.5rem !important;
-    padding: 3rem !important;
+    flex: 1 1 40%;
+    max-width: 400px ;
+    margin: 1.5rem;
+    padding: 2rem;
+}
+.portfolio-container h4 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
 }
 
+.portfolio-container p {
+    line-height: 1.8;
+}
 .project {
     background-color: #2a4a6b;
     margin-bottom: 1rem;
