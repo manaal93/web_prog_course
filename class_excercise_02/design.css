@@ -67,6 +67,13 @@ nav {
     z-index: 1000;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 nav ul {
     list-style: none;
     display: flex;
