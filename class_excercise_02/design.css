@@ -148,6 +148,8 @@ nav ul li.dropdown:hover .dropdown-menu {
 
 .home-wrapper .content {
     flex: 1;
+    padding: 0;
+    margin: 0;
 }
 
 .main {
@@ -334,7 +336,7 @@ form button {
 .hero-section {
     position: relative;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     overflow: hidden;
 }
 
