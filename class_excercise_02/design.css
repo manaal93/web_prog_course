@@ -106,16 +106,18 @@ nav ul li.dropdown {
 }
 
 nav ul li .dropdown-menu {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background: #0f1a2e;
-    padding: 0.5rem 0;
-    min-width: 200px;
+    padding: 0.5rem;
+    min-width: 170px;
     border-radius: 0.5rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
     z-index: 1000;
+    display: none;
+    flex-direction: column;
+    gap: 0.35rem;
 }
 
 nav ul li .dropdown-menu li {
@@ -134,7 +136,7 @@ nav ul li .dropdown-menu a.button {
 }
 
 nav ul li.dropdown:hover .dropdown-menu {
-    display: block;
+    display: flex;
 }
 
 /* All Content */
