@@ -101,6 +101,37 @@ nav ul li a:hover {
 	border-radius: 7px; 
 }
 
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0f1a2e;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    z-index: 1000;
+}
+
+nav ul li .dropdown-menu li {
+    margin: 0;
+}
+
+nav ul li .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+nav ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 /* All Content */
 .content { 
     padding: 2rem; 
