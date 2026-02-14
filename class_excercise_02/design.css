@@ -219,6 +219,7 @@ nav ul li.dropdown:hover .dropdown-menu {
 .content .project { /* Projects inside content */
     flex: 1 1 30%;
     max-width: 300px;
+    margin: 1rem;
 
 }
 
