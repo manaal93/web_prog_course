@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="design.css">
+  <style>
+    /* Inline CSS */
+    .project-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Internal CSS */
+    .dark-mode .project-card {
+      background-color: darkblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <h1>Portfolio</h1>
+    <div class="project-container">
+      <div class="project-card">
+        <h2>Project 1</h2>
+        <p>Description of Project 1.</p>
+        <a href="project1.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h2>Project 2</h2>
+        <p>Description of Project 2.</p>
+        <a href="project2.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h2>Research 1</h2>
+        <p>Description of Research 1.</p>
+        <a href="research1.html">View Research</a>
+      </div>
+      <div class="project-card">
+        <h2>Research 2</h2>
+        <p>Description of Research 2.</p>
+        <a href="research2.html">View Research</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <div class="footer">
+        <ul>
+            <li><a href="https://github.com" class="button">GitHub</a></li>
+            <li><a href="https://mail.google.com" class="button">Gmail</a></li>
+            <li><a href="https://linkedin.com" class="button">LinkedIn</a></li>
+        </ul>
+</div>
+
+
+  <!-- JavaScript for theme toggle -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

@@ -215,9 +215,9 @@ nav ul li a:hover {
     margin: 0; 
 }
 
-/* Portfolio page */
+/* Project page */
 
-.portfolio-button{ 
+.project-button{ 
     border-radius: 7rem !important;
     border: none;
     background: #162643!important;
@@ -228,19 +228,19 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-.portfolio-button:hover{
+.project-button:hover{
     color: #fff !important;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); 
     transform: scale(1.05); 
 }
 
-.portfolio-content { 
+.project-content { 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
 }
 
-.img-portfolio {
+.img-project {
     height: 150px;
     width: 100%;
     object-fit: cover; /* Fixes distortion */
