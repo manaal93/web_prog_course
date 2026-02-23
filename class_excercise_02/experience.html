@@ -1,180 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="design.css" rel="stylesheet">
+<html>
+<head>
+<title>Professional Experience</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="design.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
 
-        <title>Professional Experience</title>
-            <style>
-                /* Internal CSS for Experience page */
-                .experience-intro {
-                    max-width: 800px;
-                    margin: 0.5rem auto 0;
-                    text-align: center;
-                    color: #d8e2f1;
-                }
+.page-hero {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://capital-placement.com/wp-content/uploads/2020/12/career-development.png");
+    min-height: 45%;
+}
+</style>
+</head>
+<body>
 
-                .experience-table {
-                    max-width: 1100px;
-                    margin: 2rem auto 0;
-                    padding: 0 1rem 2rem;
-                }
+<button class="menu-toggle" onclick="toggleNav()">☰</button>
 
-                .experience-table__table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    background: #0f1a2e;
-                    border-radius: 12px;
-                    overflow: hidden;
-                    border: 2px solid #2a4a6b;
-                    color: #fff;
-                    font-size: 0.95rem;
-                    letter-spacing: 0.3px;
-                }
+<div class="sidenav" id="mySidenav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <button class="dropdown-btn" onclick="toggleDropdown()">PORTFOLIO ▼</button>
+    <div class="dropdown-container" id="dropdown">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+    </div>
+    <a href="contact.html">CONTACT</a>
+</div>
 
-                .experience-table__table tbody td {
-                    padding: 1rem;
-                    vertical-align: top;
-                    border-top: 1px solid rgba(255, 255, 255, 0.08);
-                    font-size: 0.95rem;
-                }
+<div class="main-content">
 
-                .experience-table__table tbody tr:nth-child(even) {
-                    background: rgba(255, 255, 255, 0.03);
-                }
+<header class="page-hero w3-display-container w3-grayscale-min">
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:64px">Experience</span>
+    </div>
+</header>
 
-                .experience-table__table ul {
-                    margin: 0.25rem 0 0;
-                    padding-left: 1.1rem;
-                }
+<div class="w3-sand w3-grayscale w3-large">
+    <div class="w3-container w3-padding-64">
+        <div class="w3-content" style="max-width:1100px">
+            <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">PROFESSIONAL EXPERIENCE</span></h5>
+            <p class="w3-center">A summary of internships and roles focused on technology, data, and web content.</p>
 
-                .experience-table__table li {
-                    margin-bottom: 0.35rem;
-                }
-
-                @media (max-width: 800px) {
-                    .experience-table__table thead {
-                        display: none;
-                    }
-
-                    .experience-table__table,
-                    .experience-table__table tbody,
-                    .experience-table__table tr,
-                    .experience-table__table td {
-                        display: block;
-                        width: 100%;
-                    }
-
-                    .experience-table__table tr {
-                        margin-bottom: 1rem;
-                        border: 1px solid rgba(255, 255, 255, 0.08);
-                        border-radius: 12px;
-                        overflow: hidden;
-                    }
-
-                    .experience-table__table tbody td {
-                        border-top: none;
-                        padding: 0.85rem 1rem;
-                    }
-                }
-            </style>
-        </head>
-        <body>
-        <div class="main-wrapper">
-            <div class="header">
-                <nav>
-                  <ul>
-                      <li><a href="index.html" class="button">Home</a></li>
-                      <li><a href="about.html" class="button">About</a></li>
-                      <li class="dropdown">
-                          <a href="portfolio.html" class="button">Portfolio</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="projects.html" class="button">Projects</a></li>
-                              <li><a href="experience.html" class="button">Experience</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="contact.html" class="button">Contact</a></li>
-                  </ul>
-                </nav>
-            </div>
-  
-            <div class="main-title">
-                <h1 style="margin-bottom: 0.25rem;">Professional Experience</h1>
-                <p class="experience-intro" style="font-size: 1rem;">A summary of internships and roles focused on technology, data, and web content.</p>
-            </div>
-
-            <div class="experience-table" style="width: 100%;">
-            <table class="experience-table__table" style="box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);">
-                <thead>
-                <tr>
-                    <th>Job Title</th>
-                    <th>Company</th>
-                    <th>Job Duties</th>
-                    <th>Duration</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Digital Tech Intern</td>
-                    <td>Lumi Voce</td>
-                    <td>
-                        <ul>
-                            <li>Maintained and updated website content using a CMS, 
-                                ensuring accuracy and brand consistency.</li>
-
-                            <li>Created and formatted landing pages, blog posts, and 
-                                resource pages using HTML/CSS</li>
-
-                            <li>Coordinated with designers/developers to test and 
-                                deploy site updates and feature enhancements.</li>
-
-                            <li>Provided technical support for website maintenance, 
-                                reducing downtime by 10% and improving overall site performance.</li>
-                        </ul>
-                    </td>
-                    <td>Jan 2026 - Present</td>
-                </tr>
-
-                <tr>
-                    <td>Summer Intern</td>
-                    <td>Hong Kong Government, Civil Aviation Department (CAD)</td>
-                    <td>
-                        <ul>
-                            <li>Assisted in organizing departmental events that 
-                                improved communication and collaboration.</li>
-
-                            <li>Edited and compiled over 300 Excel files, 
-                                improving data accuracy by 30%.</li>
-
-                            <li>Organized and entered data for 1,000+ records in 
-                                internal systems, streamlining workflows.</li>
-
-                            <li>Assisted in data analysis that contributed to a 
-                                15% increase in departmental efficiency.</li>
-                        </ul>
-                    </td>
-                    <td>June 2025 - August 2025</td>
-                </tr>
-                
-                </tbody>
-            </table>
-            </div>
-            <div class="footer">
-                <div class="container">
-                    <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="https://github.com" class="button">🐙 GitHub</a>
-                        <a href="https://mail.google.com" class="button">📧 Gmail</a>
-                        <a href="https://linkedin.com" class="button">🔗 LinkedIn</a>
-                    </div>
-                </div>
+            <div class="w3-card w3-white w3-padding w3-margin-top">
+                <table class="w3-table-all w3-hoverable">
+                    <thead>
+                        <tr class="w3-light-grey">
+                            <th>Job Title</th>
+                            <th>Company</th>
+                            <th>Job Duties</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Digital Tech Intern</td>
+                            <td>Lumi Voce</td>
+                            <td>
+                                <ul class="w3-ul">
+                                    <li>Maintained and updated website content using a CMS, ensuring accuracy and brand consistency.</li>
+                                    <li>Created and formatted landing pages, blog posts, and resource pages using HTML/CSS.</li>
+                                    <li>Coordinated with designers/developers to test and deploy site updates and feature enhancements.</li>
+                                    <li>Provided technical support for website maintenance, reducing downtime by 10% and improving overall site performance.</li>
+                                </ul>
+                            </td>
+                            <td>Jan 2026 - Present</td>
+                        </tr>
+                        <tr>
+                            <td>Summer Intern</td>
+                            <td>Hong Kong Government, Civil Aviation Department (CAD)</td>
+                            <td>
+                                <ul class="w3-ul">
+                                    <li>Assisted in organizing departmental events that improved communication and collaboration.</li>
+                                    <li>Edited and compiled over 300 Excel files, improving data accuracy by 30%.</li>
+                                    <li>Organized and entered data for 1,000+ records in internal systems, streamlining workflows.</li>
+                                    <li>Assisted in data analysis that contributed to a 15% increase in departmental efficiency.</li>
+                                </ul>
+                            </td>
+                            <td>June 2025 - August 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    <!-- JavaScript for theme toggle -->
-    
-    </body>
+    </div>
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-32">
+    <a href="https://github.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-github" style="font-size:2rem;"></i></a>
+    <a href="https://gmail.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-envelope-fill" style="font-size:2rem;"></i></a>
+    <a href="https://linkedin.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-linkedin" style="font-size:2rem;"></i></a>
+</footer>
+
+</div>
+
+<script>
+function toggleNav() {
+    var sidenav = document.getElementById("mySidenav");
+    sidenav.classList.toggle("active");
+}
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+}
+</script>
+</body>
 </html>

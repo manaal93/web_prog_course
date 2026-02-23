@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head> 
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="design.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="design.css" rel="stylesheet">
-
-    <title>Portfolio</title>
+.page-hero {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://capital-placement.com/wp-content/uploads/2020/12/career-development.png");
+    min-height: 45%;
+}
+</style>
 </head>
 <body>
-    <div class="main-wrapper">
-        <div class="header">
-            <nav>
-                <ul>
-                        <li><a href="index.html" class="button">Home</a></li>
-                        <li><a href="about.html" class="button">About</a></li>
-                        <li class="dropdown">
-                            <a href="portfolio.html" class="button">Portfolio</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="projects.html" class="button">Projects</a></li>
-                                <li><a href="experience.html" class="button">Experience</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html" class="button">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
 
-        <div class="main-title">
-            <h1>Projects and Experience</h1>
-        </div>
-        <div class="content project-content"> <!-- wapper for containers -->
-            <!-- link to projects page -->
-            <div class="project portfolio-container"> 
-            <h4 style="font-size: 24px; margin-bottom: 1.5rem;">Projects</h4> 
-            <p style="font-size: 50; line-height: 1.8;">
-                Follow the project journey across several pages, from initial brief 
-                and research, through concept and development, to final delivery and 
-                reflections. Explore the complete project dossier across multiple 
-                sections: an executive summary, methodology and research findings, 
-                implementation details, and outcome metrics.
-            </p>
-            <a href="projects.html" class="project-button">See Projects</a> 
+<button class="menu-toggle" onclick="toggleNav()">☰</button>
+
+<div class="sidenav" id="mySidenav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <button class="dropdown-btn" onclick="toggleDropdown()">PORTFOLIO ▼</button>
+    <div class="dropdown-container" id="dropdown">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+    </div>
+    <a href="contact.html">CONTACT</a>
+</div>
+
+<div class="main-content">
+
+<header class="page-hero w3-display-container w3-grayscale-min">
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:64px">Portfolio</span>
+    </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+    <div class="w3-container w3-padding-64">
+        <div class="w3-content" style="max-width:900px">
+            <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">PROJECTS &amp; EXPERIENCE</span></h5>
+
+            <div class="w3-card w3-white w3-padding w3-margin-top">
+                <h4>Projects</h4>
+                <p>Follow the project journey across several pages, from initial brief and research, through concept and development, to final delivery and reflections. Explore the complete project dossier across multiple sections: an executive summary, methodology and research findings, implementation details, and outcome metrics.</p>
+                <p><a href="projects.html" class="w3-button w3-black">See Projects</a></p>
             </div>
 
-            <!-- link to experience page -->
-            <div class="project portfolio-container"> 
-            <h4 style="font-size: 24px; margin-bottom: 1.5rem;">Experience</h4> 
-            <p style="line-height: 1.8;"> 
-                My professional journey is built on a series of roles that have 
-                shaped my skills, mindset, and approach to work. Each experience 
-                has challenged me to grow, adapt, and contribute meaningfully 
-                within different environments. The path I’ve taken reflects 
-                dedication, curiosity, and a commitment to continuous improvement. 
-                Explore the milestones that have defined my career and the 
-                experiences that continue to influence the way I work today.
-            </p>
-            <a href="experience.html" class="project-button">See Experiences</a> 
-            </div>
-                        
-            
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="https://github.com" class="button">🐙 GitHub</a>
-                        <a href="https://mail.google.com" class="button">📧 Gmail</a>
-                        <a href="https://linkedin.com" class="button">🔗 LinkedIn</a>
-                    </div>
+            <div class="w3-card w3-white w3-padding w3-margin-top">
+                <h4>Experience</h4>
+                <p>My professional journey is built on a series of roles that have shaped my skills, mindset, and approach to work. Each experience has challenged me to grow, adapt, and contribute meaningfully within different environments. The path I’ve taken reflects dedication, curiosity, and a commitment to continuous improvement.</p>
+                <p><a href="experience.html" class="w3-button w3-black">See Experience</a></p>
             </div>
         </div>
     </div>
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-32">
+    <a href="https://github.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-github" style="font-size:2rem;"></i></a>
+    <a href="https://gmail.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-envelope-fill" style="font-size:2rem;"></i></a>
+    <a href="https://linkedin.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-linkedin" style="font-size:2rem;"></i></a>
+</footer>
+
+</div>
+
+<script>
+function toggleNav() {
+    var sidenav = document.getElementById("mySidenav");
+    sidenav.classList.toggle("active");
+}
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+}
+</script>
 </body>
 </html>
-
-  <!-- JavaScript for theme toggle -->
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-    });
-  </script>

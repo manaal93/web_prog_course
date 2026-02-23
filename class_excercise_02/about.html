@@ -1,101 +1,112 @@
-<!-- About Me Page -->
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="design.css" rel="stylesheet">
+<html>
+<head>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="design.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
 
-        <title>About</title>
-    </head>
-    <body> 
-        <div class="main-wrapper">
-            <div class="header">
-                <nav>
-                  <ul>
-                      <li><a href="index.html" class="button">Home</a></li>
-                      <li><a href="about.html" class="button">About</a></li>
-                      <li class="dropdown">
-                          <a href="portfolio.html" class="button">Portfolio</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="projects.html" class="button">Projects</a></li>
-                              <li><a href="experience.html" class="button">Experience</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="contact.html" class="button">Contact</a></li>
-                  </ul>
-                </nav>
+.page-hero {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://capital-placement.com/wp-content/uploads/2020/12/career-development.png");
+    min-height: 45%;
+}
+</style>
+</head>
+<body>
+
+<button class="menu-toggle" onclick="toggleNav()">☰</button>
+
+<div class="sidenav" id="mySidenav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <button class="dropdown-btn" onclick="toggleDropdown()">PORTFOLIO ▼</button>
+    <div class="dropdown-container" id="dropdown">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+    </div>
+    <a href="contact.html">CONTACT</a>
+</div>
+
+<div class="main-content">
+
+<header class="page-hero w3-display-container w3-grayscale-min">
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:64px">About</span>
+    </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+    <div class="w3-container w3-padding-64">
+        <div class="w3-content" style="max-width:800px">
+            <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">INTRO</span></h5>
+            <p>Hi! My name is <strong>Manaal Khan</strong>, and I’m currently studying <strong>Data Science</strong> at <strong>Lingnan University</strong>. I’m working toward becoming a <strong>Data Analyst</strong> and enjoy exploring how data can help solve real problems and guide meaningful decisions.</p>
+
+            <h5 class="w3-padding-16"><span class="w3-tag w3-wide">BACKGROUND</span></h5>
+            <p>At Lingnan University, I’m learning the foundations of data science — including how data is collected, cleaned, analyzed, and presented. I enjoy turning raw information into understandable insights and exploring ways to communicate findings clearly and visually.</p>
+
+            <h5 class="w3-padding-16"><span class="w3-tag w3-wide">WHAT I ENJOY</span></h5>
+            <div class="w3-panel w3-leftbar w3-light-grey">
+                <p>Exploring datasets and identifying trends</p>
+                <p>Using analytical thinking to solve problems</p>
+                <p>Organizing and presenting information clearly</p>
+                <p>Learning new tools and improving my skills step-by-step</p>
+                <p>Practicing visual storytelling through data</p>
             </div>
-            <div class="content project-content"> 
-                <h1>About</h1>
-                <p>
-                Hi! My name is <strong>Manaal Khan</strong>, and I’m currently studying
-                <strong>Data Science</strong> at <strong>Lingnan University</strong>. I’m working
-                toward becoming a <strong>Data Analyst</strong> and enjoy exploring how data can
-                help solve real problems and guide meaningful decisions.
-                </p>
 
-                <h2>My Background</h2>
-                <p>
-                At Lingnan University, I’m learning the foundations of data science — including
-                how data is collected, cleaned, analyzed, and presented. I enjoy turning raw
-                information into understandable insights and exploring ways to communicate
-                findings clearly and visually.
-                </p>
+            <h5 class="w3-padding-16"><span class="w3-tag w3-wide">GOALS</span></h5>
+            <p>My goal is to continue strengthening my knowledge in data analysis and build a growing portfolio of projects. I hope to work as a Data Analyst in the future, using data to support smarter decisions and contribute to useful solutions in different industries.</p>
 
-                <h2>What I Enjoy Working On</h2>
-                <ul>
-                <li>Exploring datasets and identifying trends</li>
-                <li>Using analytical thinking to solve problems</li>
-                <li>Organizing and presenting information clearly</li>
-                <li>Learning new tools and improving my skills step-by-step</li>
-                <li>Practicing visual storytelling through data</li>
-                </ul>
-
-                <h2>My Goals</h2>
-                <p>
-                My goal is to continue strengthening my knowledge in data analysis and build a
-                growing portfolio of projects. I hope to work as a Data Analyst in the future,
-                using data to support smarter decisions and contribute to useful solutions in
-                different industries.
-                </p>
-
-                <h2>Life Outside of Tech</h2>
-                <p>Outside of academics and data, I enjoy spending time on activities that keep me curious and inspired:</p>
-                <ul>
+            <h5 class="w3-padding-16"><span class="w3-tag w3-wide">LIFE OUTSIDE TECH</span></h5>
+            <p>Outside of academics and data, I enjoy spending time on activities that keep me curious and inspired:</p>
+            <ul class="w3-ul w3-white w3-card">
                 <li><strong>Travelling</strong> — discovering new places and experiences</li>
                 <li><strong>Chess</strong> — challenging my strategic thinking</li>
                 <li><strong>Trying new activities</strong> — exploring something different whenever I can</li>
-                </ul>
+            </ul>
 
-                <h2>Why I Built This Website</h2>
-                <p>
-                This website is a place for me to share my journey, show what I’m learning, and
-                document my projects. It also helps me express who I am beyond academics and
-                build a portfolio I can keep improving over time.
-                </p>
+            <h5 class="w3-padding-16"><span class="w3-tag w3-wide">WHY THIS WEBSITE</span></h5>
+            <p>This website is a place for me to share my journey, show what I’m learning, and document my projects. It also helps me express who I am beyond academics and build a portfolio I can keep improving over time.</p>
 
-                <h2>Let’s Connect</h2>
-                <p>
-                You can reach out to me through the Subscribe or Contact form on this site — I’m
-                always open to learning, collaborating, and sharing ideas.
-                </p>
-                <a href="contact.html" class="button">Contact Me</a>
-            </div>
-            
-            <div class="footer">
-                <div class="container">
-                    <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="https://github.com" class="button">🐙 GitHub</a>
-                        <a href="https://mail.google.com" class="button">📧 Gmail</a>
-                        <a href="https://linkedin.com" class="button">🔗 LinkedIn</a>
-                    </div>
-                </div>
-            </div>
+            <h5 class="w3-padding-16"><span class="w3-tag w3-wide">LET’S CONNECT</span></h5>
+            <p>You can reach out to me through the Contact form on this site — I’m always open to learning, collaborating, and sharing ideas.</p>
+            <p><a href="contact.html" class="w3-button w3-black">Contact Me</a></p>
         </div>
-    </body>
+    </div>
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-32">
+    <a href="https://github.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-github" style="font-size:2rem;"></i></a>
+    <a href="https://gmail.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-envelope-fill" style="font-size:2rem;"></i></a>
+    <a href="https://linkedin.com" target="_blank" class="w3-hover-opacity" style="margin:0 15px;"><i class="bi bi-linkedin" style="font-size:2rem;"></i></a>
+</footer>
+
+</div>
+
+<script>
+function toggleNav() {
+    var sidenav = document.getElementById("mySidenav");
+    sidenav.classList.toggle("active");
+}
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+}
+</script>
+</body>
 </html>
